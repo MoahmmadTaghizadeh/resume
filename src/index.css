@@ -5,6 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Vazir';
+  font-family: Vazir;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  scroll-behavior: smooth;
+  /* background-color: rgba(80, 170, 202, 500); */
+}
+*{
+  scroll-behavior: smooth;
+  margin: 0;
 }
 
 code {
