@@ -170,11 +170,92 @@ li:hover {
      width: 100%;
      left: 0;
 }
-
-#resume {
-     margin-top: 1000px;
+.resumeWrapper {
+     width: 100%;
+     /* background-color: red; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
+#resume {
+     margin: 100px 0px;
+     /* width: 60%; */
+     border: 3px solid hotpink;
+     width: 55%;
+     min-width: 350px;
+     padding: 40px 80px;
+}
+.r {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+}
+.r h1 {
+     width: 100%;
+     /* background-color: red; */
+}
+.resumeCard {
+     width: 350px;
+     max-width: 350px;
+     min-height: 300px;
+     margin-left: 20px;
+     border-radius: 3px;
+     position: relative;
+     margin-bottom: 25px;
+     padding-right: 20px;
+}
+.resumeCard img {
+     min-height: 230px;
+     padding-right: 20px;
+     max-height: 230px;
+     background-position: center;
+     background-size: cover;
+     overflow: hidden;
+     position: absolute;
+     bottom: 30px;
+     background: transparent;
+     max-width: 280px;
+     z-index: 100;
 
+}
+.resumeCard h4 {
+     margin-bottom: 8px;
+}
+.resumeCard div {
+     background-color: #fff;
+     padding: 5px;
+     height: 105px;
+     bottom: 0;
+     width: 95%;
+     position: absolute;
+     box-shadow: 0px 2.3px 2px 2px rgb(221, 218, 218);
+     z-index: 200;
+     padding-right: 20px;
+     opacity: 0.95;
+     transition: all cubic-bezier(0.19, 1, 0.22, 1) .43s;
+     transition-delay: 200ms;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.s {
+     transition: all cubic-bezier(0.19, 1, 0.22, 1) 2.43s;
+     transition-delay: 200ms;
+}
+.resumeCard:hover {
+     cursor: pointer;
+}
+.resumeCard:hover .resumeCard2 {
+      color: rgba(80, 170, 202, 500);
+}
+.resumeCard:hover div {
+     opacity: 0.8;
+}
+.resumeCard:hover .s {
+     transform: translateY(-15px);
+}
 .about-me {
      width: 350px;
      height: 430px;
@@ -205,7 +286,7 @@ li:hover {
      /* Rounded corners */
      font-size: 18px;
      /* Increase font size */
-     z-index: 20;
+     z-index: 300;
 }
 
 .scrollButton:hover {
@@ -291,6 +372,9 @@ li:hover {
      background: #fff;
      border-radius: 50%;
 }
+.resumeCard2 {
+     margin-bottom: 10px;
+}
 .loader {
      height: 10px;
      width: 100%;
@@ -301,6 +385,7 @@ li:hover {
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     /* background-color: red; */
 }
 .jobTemplate {
      width: 55%;
@@ -309,12 +394,28 @@ li:hover {
      box-shadow: 0px 5px 5px 5px rgb(224, 224, 224);
      border-radius: 5px;
      min-height: 500px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.jobTemplate div {
+     width: 100%;
+     /* background-color: red; */
+     text-align: right;
 }
 .jobTemplate h3 {
      width: fit-content;
      padding: 5px;
+     padding-bottom: 0;
      border-bottom: 4px solid red;
      margin-bottom: 15px;
+
+}
+.jobTemplate h4 {
+     /* display: flex; */
+     width: 100%;
+     text-align: center;
 
 }
 .jobTemplate img {
@@ -328,15 +429,35 @@ li:hover {
      min-height: 300px;
      box-shadow: 0px 0px 3.5px 3.5px rgb(224, 224, 224);
      border-radius: 6px;
-     color: #fff;
-     padding: 14px;
+     color: #000;
+     padding: 10px 1px;
      font-size: 18px;
-     background: url(../efspco.png)  center;
+     /* background: url(../efspco.png)  center; */
      background-size: contain;
      background-position-y: 67%;
 }
 .actualJob h5 {
-     bottom: 5px;
      margin-top: 5px;
-     color: rgb(26, 24, 24);
+     color: rgb(0, 20, 7);
+     width: fit-content;
+     animation: animate 2s linear 1 alternate-reverse;
+     background: linear-gradient(90deg, #000, #000, #000);
+     background-repeat: no-repeat;
+     background-size: 80%;
+     -webkit-background-clip: text;
+     /* background-clip: content-box; */
+     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+     font-family: Vazir, 'Courier New', Courier, monospace;
 }
+.actualJob ul {
+     list-style: none;
+
+}
+@keyframes animate {
+     0% {
+       /* background-position: -500%; */
+     }
+     100% {
+       background-position: 500%;
+     }
+   }

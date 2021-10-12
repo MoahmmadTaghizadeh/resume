@@ -12,6 +12,7 @@ body {
   direction: rtl;
   scroll-behavior: smooth;
   /* background-color: rgba(80, 170, 202, 500); */
+  overflow-x: hidden;
 }
 *{
   scroll-behavior: smooth;

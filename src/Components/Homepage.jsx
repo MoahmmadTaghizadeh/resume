@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ProgressCircles from './ProgressCircles'
 import { NavLink } from 'react-router-dom'
 import Jobs from './Jobs'
+import Resume from './Resume'
 
 export default function Homepage() {
       const [state, setState] = useState({
@@ -93,9 +94,11 @@ export default function Homepage() {
                               </section>
                         </div>
                   </div>
+                  <div className="resumeWrapper">
                   <section id="resume">
-                        asdasd
+                        <Resume />
                   </section>
+                  </div>
                   <section id="jobs">
                         <Jobs />
                   </section>
