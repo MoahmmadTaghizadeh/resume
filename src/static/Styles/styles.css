@@ -1,463 +1,491 @@
 @font-face {
-     font-family: Vazir;
-     src: url('../fonts/Farsi-Digits/Vazir-FD.eot');
-     src: url('../fonts/Farsi-Digits/Vazir-FD.eot?#iefix') format('embedded-opentype'), url('../fonts/Farsi-Digits/Vazir-FD.woff2') format('woff2'), url('../fonts/Farsi-Digits/Vazir-FD.woff') format('woff'), url('../fonts/Farsi-Digits/Vazir-FD.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-FD.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Farsi-Digits/Vazir-FD.woff2") format("woff2"),
+    url("../fonts/Farsi-Digits/Vazir-FD.woff") format("woff"),
+    url("../fonts/Farsi-Digits/Vazir-FD.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-     font-family: Vazir;
-     src: url('../fonts/Farsi-Digits/Vazir-Bold-FD.eot');
-     src: url('../fonts/Farsi-Digits/Vazir-Bold-FD.eot?#iefix') format('embedded-opentype'), url('../fonts/Farsi-Digits/Vazir-Bold-FD.woff2') format('woff2'), url('../fonts/Farsi-Digits/Vazir-Bold-FD.woff') format('woff'), url('../fonts/Farsi-Digits/Vazir-Bold-FD.ttf') format('truetype');
-     font-weight: bold;
-     font-style: normal;
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Bold-FD.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Bold-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Farsi-Digits/Vazir-Bold-FD.woff2") format("woff2"),
+    url("../fonts/Farsi-Digits/Vazir-Bold-FD.woff") format("woff"),
+    url("../fonts/Farsi-Digits/Vazir-Bold-FD.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-     font-family: Vazir;
-     src: url('../fonts/Farsi-Digits/Vazir-Black-FD.eot');
-     src: url('../fonts/Farsi-Digits/Vazir-Black-FD.eot?#iefix') format('embedded-opentype'), url('../fonts/Farsi-Digits/Vazir-Black-FD.woff2') format('woff2'), url('../fonts/Farsi-Digits/Vazir-Black-FD.woff') format('woff'), url('../fonts/Farsi-Digits/Vazir-Black-FD.ttf') format('truetype');
-     font-weight: 900;
-     font-style: normal;
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Black-FD.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Black-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Farsi-Digits/Vazir-Black-FD.woff2") format("woff2"),
+    url("../fonts/Farsi-Digits/Vazir-Black-FD.woff") format("woff"),
+    url("../fonts/Farsi-Digits/Vazir-Black-FD.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-     font-family: Vazir;
-     src: url('../fonts/Farsi-Digits/Vazir-Medium-FD.eot');
-     src: url('../fonts/Farsi-Digits/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'), url('../fonts/Farsi-Digits/Vazir-Medium-FD.woff2') format('woff2'), url('../fonts/Farsi-Digits/Vazir-Medium-FD.woff') format('woff'), url('../fonts/Farsi-Digits/Vazir-Medium-FD.ttf') format('truetype');
-     font-weight: 500;
-     font-style: normal;
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Medium-FD.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Medium-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Farsi-Digits/Vazir-Medium-FD.woff2") format("woff2"),
+    url("../fonts/Farsi-Digits/Vazir-Medium-FD.woff") format("woff"),
+    url("../fonts/Farsi-Digits/Vazir-Medium-FD.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-     font-family: Vazir;
-     src: url('../fonts/Farsi-Digits/Vazir-Light-FD.eot');
-     src: url('../fonts/Farsi-Digits/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'), url('../fonts/Farsi-Digits/Vazir-Light-FD.woff2') format('woff2'), url('../fonts/Farsi-Digits/Vazir-Light-FD.woff') format('woff'), url('../fonts/Farsi-Digits/Vazir-Light-FD.ttf') format('truetype');
-     font-weight: 300;
-     font-style: normal;
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Light-FD.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Light-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Farsi-Digits/Vazir-Light-FD.woff2") format("woff2"),
+    url("../fonts/Farsi-Digits/Vazir-Light-FD.woff") format("woff"),
+    url("../fonts/Farsi-Digits/Vazir-Light-FD.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-     font-family: Vazir;
-     src: url('../fonts/Farsi-Digits/Vazir-Thin-FD.eot');
-     src: url('../fonts/Farsi-Digits/Vazir-Thin-FD.eot?#iefix') format('embedded-opentype'), url('../fonts/Farsi-Digits/Vazir-Thin-FD.woff2') format('woff2'), url('../fonts/Farsi-Digits/Vazir-Thin-FD.woff') format('woff'), url('../fonts/Farsi-Digits/Vazir-Thin-FD.ttf') format('truetype');
-     font-weight: 100;
-     font-style: normal;
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Thin-FD.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Thin-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Farsi-Digits/Vazir-Thin-FD.woff2") format("woff2"),
+    url("../fonts/Farsi-Digits/Vazir-Thin-FD.woff") format("woff"),
+    url("../fonts/Farsi-Digits/Vazir-Thin-FD.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 * {
-     font-family: 'Vazir';
-     font-family: Vazir;
+  font-family: "Vazir";
+  font-family: Vazir;
 }
 
 .homePage {
-     /* background-color: rgba(80, 170, 202, 500); */
-     background: url("../bg.png") no-repeat center;
-     min-height: 100vh;
-     max-width: 100%;
-     margin: 0;
-     padding-top: 0;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
+  /* background-color: rgba(80, 170, 202, 500); */
+  background: url("../bg.png") no-repeat center;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-home {
-     background-image: url("../bg.png");
-     height: 100vh; 
-     width: 100vw;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
+  background-image: url("../bg.png");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .navLink {
-     font-size: 19px;
-     text-decoration: none;
-     border: none;
-     width: fit-content;
-     padding: 2px;
+  font-size: 19px;
+  text-decoration: none;
+  border: none;
+  width: fit-content;
+  padding: 2px;
 }
 
 nav {
-     width: 100%;
-     height: 50px;
-     position: fixed;
-     top: 0;
-     left: 0;
-     z-index: 10;
-     /* background-color: #333333; */
-     direction: rtl;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* background-color: #333333; */
+  direction: rtl;
 }
 
 #wrapper {
-     width: 100%;
-     height: 100%;
-     overflow: hidden;
-     display: block;
-     float: left;
-     direction: rtl;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  float: left;
+  direction: rtl;
 }
 
 #wrapper ul {
-     display: flex;
-     width: 50%;
-     margin: 0 auto;
-     height: 100%;
-     text-align: center;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
 }
 
 #wrapper li {
-     display: block;
-     float: left;
-     text-align: center;
-     width: 25%;
-     height: 100%;
-     transition: all ease-in-out .2s;
+  display: block;
+  float: left;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  transition: all ease-in-out 0.2s;
 }
 
 #wrapper span {
-     display: block;
-     float: right;
-     color: white;
-     width: 100%;
-     padding: 0;
-     line-height: 50px;
-     text-decoration: none;
-     font-weight: bold;
-     letter-spacing: 0px;
-     transition: all cubic-bezier(0.19, 1, 0.22, 1) .43s;
-     transition-delay: 200ms;
+  display: block;
+  float: right;
+  color: white;
+  width: 100%;
+  padding: 0;
+  line-height: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.43s;
+  transition-delay: 200ms;
 }
 
 #wrapper span:hover {
-     /* letter-spacing: 0.2px; */
-     font-size: 18px;
+  /* letter-spacing: 0.2px; */
+  font-size: 18px;
 }
 
 li.different {
-     border: none;
-     position: relative;
+  border: none;
+  position: relative;
 }
 
 li.different:hover {
-     border: none;
+  border: none;
 }
 
 li:hover {
-     border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid #ffffff;
 }
 
 .different::after {
-     content: '';
-     position: absolute;
-     width: 0px;
-     height: 5px;
-     left: 50%;
-     bottom: 0;
-     background-color: white;
-     transition: all cubic-bezier(0.19, 1, 0.22, 1) .43s;
-     transition-delay: 200ms;
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 5px;
+  left: 50%;
+  bottom: 0;
+  background-color: white;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.43s;
+  transition-delay: 200ms;
 }
 
 .different:hover::after {
-     width: 100%;
-     left: 0;
+  width: 100%;
+  left: 0;
 }
 .resumeWrapper {
-     width: 100%;
-     /* background-color: red; */
-     display: flex;
-     justify-content: center;
-     align-items: center;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #resume {
-     margin: 100px 0px;
-     /* width: 60%; */
-     border: 3px solid hotpink;
-     width: 55%;
-     min-width: 350px;
-     padding: 40px 80px;
+  margin: 100px 0px;
+  /* width: 60%; */
+  box-shadow: 0px 5px 5px 5px rgb(224, 224, 224);
+  border-radius: 5px;
+  /* border: 3px solid hotpink; */
+  width: 55%;
+  min-width: 350px;
+  padding: 40px 80px;
 }
 .r {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 .r h1 {
-     width: 100%;
-     /* background-color: red; */
+  width: 100%;
+  /* background-color: red; */
 }
 .resumeCard {
-     width: 350px;
-     max-width: 350px;
-     min-height: 300px;
-     margin-left: 20px;
-     border-radius: 3px;
-     position: relative;
-     margin-bottom: 25px;
-     padding-right: 20px;
+  width: 350px;
+  max-width: 350px;
+  min-height: 300px;
+  margin-left: 20px;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 25px;
+  padding-right: 20px;
 }
 .resumeCard img {
-     min-height: 230px;
-     padding-right: 20px;
-     max-height: 230px;
-     background-position: center;
-     background-size: cover;
-     overflow: hidden;
-     position: absolute;
-     bottom: 30px;
-     background: transparent;
-     max-width: 280px;
-     z-index: 100;
-
+  min-height: 230px;
+  padding-right: 20px;
+  max-height: 230px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  bottom: 30px;
+  background: transparent;
+  max-width: 280px;
+  z-index: 100;
+}
+.pageSlider {
+  background-color: red;
+}
+.resumeCard {
+  text-decoration: none;
+  color: #000;
 }
 .resumeCard h4 {
-     margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 .resumeCard div {
-     background-color: #fff;
-     padding: 5px;
-     height: 105px;
-     bottom: 0;
-     width: 95%;
-     position: absolute;
-     box-shadow: 0px 2.3px 2px 2px rgb(221, 218, 218);
-     z-index: 200;
-     padding-right: 20px;
-     opacity: 0.95;
-     transition: all cubic-bezier(0.19, 1, 0.22, 1) .43s;
-     transition-delay: 200ms;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
+  background-color: #fff;
+  padding: 5px;
+  height: 105px;
+  bottom: 0;
+  width: 95%;
+  position: absolute;
+  box-shadow: 0px 2.3px 2px 2px rgb(221, 218, 218);
+  z-index: 200;
+  padding-right: 20px;
+  opacity: 0.95;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.43s;
+  transition-delay: 200ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .s {
-     transition: all cubic-bezier(0.19, 1, 0.22, 1) 2.43s;
-     transition-delay: 200ms;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2.43s;
+  transition-delay: 200ms;
 }
 .resumeCard:hover {
-     cursor: pointer;
+  cursor: pointer;
 }
 .resumeCard:hover .resumeCard2 {
-      color: rgba(80, 170, 202, 500);
+  color: rgba(80, 170, 202, 500);
 }
 .resumeCard:hover div {
-     opacity: 0.8;
+  opacity: 0.8;
 }
 .resumeCard:hover .s {
-     transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 .about-me {
-     width: 350px;
-     height: 430px;
+  width: 350px;
+  height: 430px;
 }
 
 .scrollButton {
-     position: sticky;
-     /* Fixed/sticky position */
-     bottom: 20px;
-     /* Place the button at the bottom of the page */
-     right: 95%;
-     /* Place the button 30px from the right */
-     z-index: 99;
-     /* Make sure it does not overlap */
-     border: none;
-     /* Remove borders */
-     outline: none;
-     /* Remove outline */
-     background-color: rgb(8, 4, 71);
-     /* Set a background color */
-     color: white;
-     /* Text color */
-     cursor: pointer;
-     /* Add a mouse pointer on hover */
-     padding: 15px;
-     /* Some padding */
-     border-radius: 10px;
-     /* Rounded corners */
-     font-size: 18px;
-     /* Increase font size */
-     z-index: 300;
+  position: sticky;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 95%;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: rgb(8, 4, 71);
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  z-index: 300;
 }
 
 .scrollButton:hover {
-     background-color: #555;
-     /* Add a dark-grey background on hover */
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }
 .about-me h1 {
-     font-size: 32px;
-     height: 30px;
-     margin-top: 18px;
-     animation: titleAppear 5000ms forwards  infinite;
-     animation-delay: 0ms;
-     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  font-size: 32px;
+  height: 30px;
+  margin-top: 18px;
+  animation: titleAppear 5000ms forwards infinite;
+  animation-delay: 0ms;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 .about-me h2 {
-     font-size: 25px;
-     height: 15px;
-     animation: titleAppear2 5000ms forwards  infinite;
-     animation-delay: 0ms;
-     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  font-size: 25px;
+  height: 15px;
+  animation: titleAppear2 5000ms forwards infinite;
+  animation-delay: 0ms;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-.about-me p  {
-     line-height: 35px;     
-     animation: fade 5000ms forwards  infinite;
-     animation-delay: 0ms;
-     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+.about-me p {
+  line-height: 35px;
+  animation: fade 5000ms forwards infinite;
+  animation-delay: 0ms;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 @keyframes fade {
-     from {
-          opacity: 0;
-     }
-     to {
-          opacity: 1;
-     }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes titleAppear2 {
-     from {
-          font-size: 0px;
-          opacity: 0;
-     }
-     to {
-          font-size: 25px;
-          opacity: 1;
-     }
+  from {
+    font-size: 0px;
+    opacity: 0;
+  }
+  to {
+    font-size: 25px;
+    opacity: 1;
+  }
 }
 @keyframes titleAppear {
-     from {
-          font-size: 0px;
-          opacity: 0;
-     }
-     to {
-          font-size: 32px;
-          opacity: 1;
-     }
+  from {
+    font-size: 0px;
+    opacity: 0;
+  }
+  to {
+    font-size: 32px;
+    opacity: 1;
+  }
 }
 .progress {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .circleWrapper {
-     display: flex;
-     align-items: center;
-     justify-content: space-around;
-     margin-top: 15px;
-     width: 90%;
-     padding-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  width: 90%;
+  padding-right: 25px;
 }
 .circle {
-     height: 18px;
-     width: 18px;
-     background: #fff;
-     border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  background: #fff;
+  border-radius: 50%;
 }
 .activeCircle {
-     height: 27px;
-     width: 27px;
-     background: #fff;
-     border-radius: 50%;
+  height: 27px;
+  width: 27px;
+  background: #fff;
+  border-radius: 50%;
 }
 .resumeCard2 {
-     margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .loader {
-     height: 10px;
-     width: 100%;
-     /* background-color: blue; */
+  height: 10px;
+  width: 100%;
+  /* background-color: blue; */
 }
 #jobs {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
 }
 .jobTemplate {
-     width: 55%;
-     min-width: 350px;
-     padding: 80px;
-     box-shadow: 0px 5px 5px 5px rgb(224, 224, 224);
-     border-radius: 5px;
-     min-height: 500px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+  width: 55%;
+  min-width: 350px;
+  padding: 80px;
+  box-shadow: 0px 5px 5px 5px rgb(224, 224, 224);
+  border-radius: 5px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .jobTemplate div {
-     width: 100%;
-     /* background-color: red; */
-     text-align: right;
+  width: 100%;
+  /* background-color: red; */
+  text-align: right;
 }
 .jobTemplate h3 {
-     width: fit-content;
-     padding: 5px;
-     padding-bottom: 0;
-     border-bottom: 4px solid red;
-     margin-bottom: 15px;
-
+  width: fit-content;
+  padding: 5px;
+  padding-bottom: 0;
+  border-bottom: 4px solid red;
+  margin-bottom: 15px;
 }
 .jobTemplate h4 {
-     /* display: flex; */
-     width: 100%;
-     text-align: center;
-
+  /* display: flex; */
+  width: 100%;
+  text-align: center;
 }
 .jobTemplate img {
-     height: 100%;
-     width: 100%;
-     filter: blur(2px);
-     z-index: -2;
+  height: 100%;
+  width: 100%;
+  filter: blur(2px);
+  z-index: -2;
 }
 .actualJob {
-     width: 90%;
-     min-height: 300px;
-     box-shadow: 0px 0px 3.5px 3.5px rgb(224, 224, 224);
-     border-radius: 6px;
-     color: #000;
-     padding: 10px 1px;
-     font-size: 18px;
-     /* background: url(../efspco.png)  center; */
-     background-size: contain;
-     background-position-y: 67%;
+  width: 90%;
+  min-height: 300px;
+  box-shadow: 0px 0px 3.5px 3.5px rgb(224, 224, 224);
+  border-radius: 6px;
+  color: #000;
+  padding: 10px 1px;
+  font-size: 18px;
+  /* background: url(../efspco.png)  center; */
+  background-size: contain;
+  background-position-y: 67%;
 }
 .actualJob h5 {
-     margin-top: 5px;
-     color: rgb(0, 20, 7);
-     width: fit-content;
-     animation: animate 2s linear 1 alternate-reverse;
-     background: linear-gradient(90deg, #000, #000, #000);
-     background-repeat: no-repeat;
-     background-size: 80%;
-     -webkit-background-clip: text;
-     /* background-clip: content-box; */
-     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-     font-family: Vazir, 'Courier New', Courier, monospace;
+  margin-top: 5px;
+  color: rgb(0, 20, 7);
+  width: fit-content;
+  animation: animate 2s linear 1 alternate-reverse;
+  background: linear-gradient(90deg, #000, #000, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-background-clip: text;
+  /* background-clip: content-box; */
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  font-family: Vazir, "Courier New", Courier, monospace;
 }
 .actualJob ul {
-     list-style: none;
-
+  list-style: none;
 }
 @keyframes animate {
-     0% {
-       /* background-position: -500%; */
-     }
-     100% {
-       background-position: 500%;
-     }
-   }
+  0% {
+    /* background-position: -500%; */
+  }
+  100% {
+    background-position: 500%;
+  }
+}
