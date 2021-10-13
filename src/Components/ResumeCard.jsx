@@ -11,13 +11,13 @@ import { NavLink } from "react-router-dom";
 export default function ResumeCard(props) {
   return (
     <NavLink className="resumeCard" to={props.link}>
-      <img
+      {props.show ? <img
         src={props.img}
-        alt="picture"
+        alt="project sample page"
         height="230px"
         width="350px"
         className="s"
-      />
+      /> : <div style={{height: '0px'}}> </div> }
       <div>
         <h3 className="resumeCard2">{props.firstTitle}</h3>
         <h4>{props.secondTitle}</h4>

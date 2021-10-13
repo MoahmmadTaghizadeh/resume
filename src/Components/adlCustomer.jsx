@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import ResumeCard from "./ResumeCard";
 import adlDriverimg from "../static/adlCustomer.png";
-import adlDriverImg1 from "../static/adlDriver1.png";
-import adlDriverImg2 from "../static/adlDriver2.png";
-import adlDriverImg3 from "../static/adlDriver3.png";
-import adlDriverImg4 from "../static/adlDriver4.png";
-import adlDriverImg5 from "../static/adlDriver5.png";
-import adlDriverImg6 from "../static/adlDriver6.png";
+import adlCustomerImg1 from "../static/adlCustomer1.png";
+import adlCustomerImg2 from "../static/adlCustomer2.png";
+import adlCustomerImg3 from "../static/adlCustomer3.png";
+import adlCustomerImg4 from "../static/adlCustomer4.png";
+import adlCustomerImg5 from "../static/adlCustomer5.png";
+import adlCustomerImg6 from "../static/adlCustomer6.png";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import slider from "./slider";
 import { Slideshow } from "./slider";
 import { useHistory } from "react-router";
 
-export default function AdlDriver(props) {
+export default function AdlCustomer(props) {
   const history = useHistory()
   const [state, setState] = useState({
     activeSlider: 1,
-    activeImageUrl: adlDriverImg1,
+    activeImageUrl: adlCustomerImg1,
   });
   const buttons = [1, 2, 3, 4, 5, 6];
 
@@ -27,37 +27,37 @@ export default function AdlDriver(props) {
       <div className="main">
         <header>
           <h3> شرکت باربری عدل ترابران توس </h3>
-          <h4>پنل باربری راننده </h4>
+          <h4>پنل باربری صاحب کالا </h4>
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
         <div className="imgWrapper">
         <img
-          src={adlDriverImg1}
+          src={adlCustomerImg1}
           alt="project pic"
           className={`slide ${state.activeSlider == 1 ? "opaque" : ""}`}
         />
         <img
-          src={adlDriverImg2}
+          src={adlCustomerImg2}
           alt="project pic"
           className={`slide ${state.activeSlider == 2 ? "opaque" : ""}`}
         />
         <img
-          src={adlDriverImg3}
+          src={adlCustomerImg3}
           alt="project pic"
           className={`slide ${state.activeSlider == 3 ? "opaque" : ""}`}
         />
         <img
-          src={adlDriverImg4}
+          src={adlCustomerImg4}
           alt="project pic"
           className={`slide ${state.activeSlider == 4 ? "opaque" : ""}`}
         />
         <img
-          src={adlDriverImg5}
+          src={adlCustomerImg5}
           alt="project pic"
           className={`slide ${state.activeSlider == 5 ? "opaque" : ""}`}
         />
         <img
-          src={adlDriverImg6}
+          src={adlCustomerImg6}
           alt="project pic"
           className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
         />
@@ -152,16 +152,15 @@ export default function AdlDriver(props) {
           </a>
         </span>
         <p className="description">
-          این پنل برای رانندگان شرکت ایجاد شده است تا در محیط وب بار های موجود
-          در سامانه باربری عدل ترابر را مشاهده کنند و با ثبت قیمت مورد نظر خود
-          برای حمل بار در صورت برنده شدن در مناقصه بارگیری و حمل بار را انجام
-          دهند.
+          این پنل برای مشتریان شرکت ایجاد شده است تا در محیط وب بار های موجود
+        خود را در سامانه ثبت کنند و با اشراف کامل بر فرایند قیمت گزاری و حمل بار، بار خود را در مقصد صحیح و سالم از راننده تحویل 
+        بگیرند
         </p>
         <p className="description">
-          در این پروژه من توسعه بخش های جستجوی نقشه، احراز هویت راننده،
+          در این پروژه من توسعه بخش های جستجوی نقشه، احراز هویت صاحب کالا
           validation اطلاعات ثبت شده در فرم های مختلف سایت (از جمله ثبت اطلاعات
-          راننده و خودرو)، اضافه شدن بخش نمایش حواله و بارنامه و اطلاعات شرکت
-          حمل و نقل در صفحه بار ها، اضافه شدن پیشنهادات و انتقادات و ... را به
+          شخص حقوقی و حقیقی، ثبت مشخصات بار و ...)، اضافه شدن بخش نمایش حواله و بارنامه   
+             در صفحه بار ها، اضافه شدن نوع دسته بندی بار هنگام ثبت، رفع ایرادات موجود و... را به
           عهده داشتم. موارد فوق به صورت Full-stack انجام شده و تمامی Procedure
           ها و webservice های لازم را نیز ایجاد و ویرایش کردم.
         </p>

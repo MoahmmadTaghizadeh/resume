@@ -20,14 +20,15 @@ export default function Resume() {
         firstTitle={"شرکت باربری عدل ترابران توس"}
         secondTitle={"پنل باربری صاحب کالا"}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
-        link={"/adltarabaranDriverPanel"}
-        link={"/adltarabaranDriverPanel"}
+        show={true}
+        link={"/adltarabaranCustomerPanel"}
       />
       <ResumeCard
         img={adlCustomer}
         firstTitle={"شرکت باربری عدل ترابران توس"}
         secondTitle={"پنل باربری راننده"}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
+        show={true}
         link={"/adltarabaranDriverPanel"}
       />
       <ResumeCard
@@ -35,13 +36,15 @@ export default function Resume() {
         firstTitle={"شرکت باربری عدل ترابران توس"}
         secondTitle={"پنل باربری شرکت حمل و نقل"}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
-        link={"/adltarabaranDriverPanel"}
+        show={true}
+        link={"/adltarabaranCmrPanel"}
       />
       <ResumeCard
         img={webApp}
         firstTitle={"تاکسی ابتکار"}
         secondTitle={"وب اپلیکیشن تاکسی ابتکار"}
         thirdTitle={"Node.js - React.js - SQL Server"}
+        show={true}
         link={"/adltarabaranDriverPanel"}
       />
       <ResumeCard
@@ -49,6 +52,7 @@ export default function Resume() {
         firstTitle={"شرکت آلمانی Fahrzeug"}
         secondTitle={"پنل ادمین"}
         thirdTitle={"Node.js - React.js - MySQL"}
+        show={true}
         link={"/adltarabaranDriverPanel"}
       />
       <ResumeCard
@@ -56,6 +60,7 @@ export default function Resume() {
         firstTitle={"شرکت آلمانی Fahrzeug"}
         secondTitle={"پنل کاربری"}
         thirdTitle={"Node.js - React.js - MySQL"}
+        show={true}
         link={"/adltarabaranDriverPanel"}
       />
       <ResumeCard
@@ -63,6 +68,7 @@ export default function Resume() {
         firstTitle={"شرکت ابتکار فناوران"}
         secondTitle={" پروژه مدیریت آژانس در کل کشور "}
         thirdTitle={"Node.js - React.js - SQL Server - MongoDB"}
+        show={true}
         link={"/adltarabaranDriverPanel"}
       />
       <ResumeCard
@@ -70,6 +76,7 @@ export default function Resume() {
         firstTitle={" استارتاپ آوید"}
         secondTitle={"شبکه اجتماعی آوید"}
         thirdTitle={"Node.js - Flutter - MySQL"}
+        show={true}
         link={"/adltarabaranDriverPanel"}
       />
       <ResumeCard
@@ -77,6 +84,7 @@ export default function Resume() {
         firstTitle={" موسسه آموزش زبان انگلیش هاب"}
         secondTitle={"سایت و پنل زبان آموزان"}
         thirdTitle={"Node.js - React.js - MySQL"}
+        show={true}
         link={"/adltarabaranDriverPanel"}
       />
       <ResumeCard
@@ -84,6 +92,7 @@ export default function Resume() {
         firstTitle={"رب زشک خراسان"}
         secondTitle={"پنل مدیریت سفارشات"}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
+        show={true}
         link={"/adltarabaranDriverPanel"}
       />
       <ResumeCard
@@ -91,6 +100,7 @@ export default function Resume() {
         firstTitle={"آژانس 1830 مشهد"}
         secondTitle={"پنل اپراتور تلفن و بیسیم"}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
+        show={true}
         link={"/adltarabaranDriverPanel"}
       />
     </div>

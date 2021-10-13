@@ -391,17 +391,42 @@ li:hover {
   width: 90%;
   padding-right: 25px;
 }
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-top: 15px;
+  width: 50%;
+  min-width: 300px;
+  /* box-shadow: 1px 1px 1px 2px rgb(219, 219, 219); */
+}
 .circle {
   height: 18px;
   width: 18px;
-  background: #fff;
+  background: #222;
+  border: none;
+  outline: none;
   border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.43s;
 }
 .activeCircle {
   height: 27px;
+  background-color: seagreen;
   width: 27px;
-  background: #fff;
+  /* background: #fff; */
+  border: none;
+  outline: none;
   border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .resumeCard2 {
   margin-bottom: 10px;
@@ -488,4 +513,156 @@ li:hover {
   100% {
     background-position: 500%;
   }
+}
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main {
+  /* background-color: red; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 60%;
+}
+.description {
+  line-height: 30px;
+  text-align: justify;
+  display: flex;
+  justify-content: flex-start;
+  /* text-align: right; */
+  margin-top: 25px;
+  color: #888;
+  text-indent: 30px;
+}
+.main span {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 700;
+
+}
+.main span a {
+  text-align: left;
+  min-width: 200px;
+  letter-spacing: 2px;
+  color: rgba(80, 170, 202, 500);
+}
+.main span a:hover{
+  color: rgb(165, 34, 137);
+}
+.main img {
+  max-width: 65%;
+  margin-bottom: 30px;
+  transition: all 1000ms ease-out;
+  /* min-width: 80%; */
+  box-shadow: 0px 4px 4px 4px rgb(219, 215, 215);
+  border-radius: 18px;
+}
+.slide {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  position: absolute;
+  z-index: -100;
+  transform: translateX(1000px);
+  transform: scale(0);
+}
+.opaque {
+  opacity:1;
+  transform: translateX(0px);
+  transform: scale(1);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+.main header {
+  /* box-shadow: 0px 3px 2px 3px rgb(228, 227, 227); */
+  padding: 8px;
+  border-radius: 4px;
+  min-height: 150px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+} 
+.imgWrapper {
+  /* background-color: red; */
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.buttonWrapper button.b {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.button-up,
+.button-down {
+  position: relative;
+  padding: 5px;
+  margin: 30px auto;
+  position: fixed;
+  top:15px;
+  left: 15px;
+  /* background: #000; */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+  color: rgba(80, 170, 202, 500);
+}
+
+.button-down:hover {
+  transform: translate3d(0, 10px, 0);
+}
+
+.button-up:hover {
+  transform: translate3d(-10px, 0, 0);
+  border: 1px solid rgba(80, 170, 202, 500);
+  background: rgb(216, 236, 240);
+  color: #ffffff;
+  cursor: pointer;
+}
+.button-up:hover .button-up::after {
+  color: #ffffff;
+}
+
+.button-up::after,
+.button-down::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  z-index: 11;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 2px solid rgba(80, 170, 202, 500);
+  border-left: 2px solid rgba(80, 170, 202, 500);
+
+}
+.button-up::after {
+  top: 20px;
+  transform: rotate(45deg);
+}
+
+.button-down::after {
+  top: 10px;
+  transform: rotate(225deg);
+}
+@media screen and (max-width: 700px) {
+  .imgWrapper {
+    min-height: 200px;
+  }
+
 }
