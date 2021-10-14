@@ -7,10 +7,6 @@ import adlDriverImg3 from "../static/adlDriver3.png";
 import adlDriverImg4 from "../static/adlDriver4.png";
 import adlDriverImg5 from "../static/adlDriver5.png";
 import adlDriverImg6 from "../static/adlDriver6.png";
-import "react-slideshow-image/dist/styles.css";
-import { Slide } from "react-slideshow-image";
-import slider from "./slider";
-import { Slideshow } from "./slider";
 import { useHistory } from "react-router";
 
 export default function AdlDriver(props) {

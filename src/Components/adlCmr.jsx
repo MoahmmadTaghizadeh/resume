@@ -1,23 +1,19 @@
 import React, { useState } from "react";
 import ResumeCard from "./ResumeCard";
-import adlDriverimg from "../static/adlCustomer.png";
-import adlCustomerImg1 from "../static/adlCustomer1.png";
-import adlCustomerImg2 from "../static/adlCustomer2.png";
-import adlCustomerImg3 from "../static/adlCustomer3.png";
-import adlCustomerImg4 from "../static/adlCustomer4.png";
-import adlCustomerImg5 from "../static/adlCustomer5.png";
-import adlCustomerImg6 from "../static/adlCustomer6.png";
-import "react-slideshow-image/dist/styles.css";
-import { Slide } from "react-slideshow-image";
-import slider from "./slider";
-import { Slideshow } from "./slider";
+// import adlDriverimg from "../static/adlCustomer.png";
+import adlCmrImg1 from "../static/adlCmr1.png";
+import adlCmrImg2 from "../static/adlCmr2.png";
+import adlCmrImg3 from "../static/adlCmr3.png";
+import adlCmrImg4 from "../static/adlCmr4.png";
+import adlCmrImg5 from "../static/adlCmr5.png";
+import adlCmrImg6 from "../static/adlCmr6.png";
 import { useHistory } from "react-router";
 
 export default function AdlCmr(props) {
   const history = useHistory()
   const [state, setState] = useState({
     activeSlider: 1,
-    activeImageUrl: adlCustomerImg1,
+    activeImageUrl: adlCmrImg1,
   });
   const buttons = [1, 2, 3, 4, 5, 6];
 
@@ -32,32 +28,32 @@ export default function AdlCmr(props) {
         </header>
         <div className="imgWrapper">
         <img
-          src={adlCustomerImg1}
+          src={adlCmrImg1}
           alt="project pic"
           className={`slide ${state.activeSlider == 1 ? "opaque" : ""}`}
         />
         <img
-          src={adlCustomerImg2}
+          src={adlCmrImg2}
           alt="project pic"
           className={`slide ${state.activeSlider == 2 ? "opaque" : ""}`}
         />
         <img
-          src={adlCustomerImg3}
+          src={adlCmrImg3}
           alt="project pic"
           className={`slide ${state.activeSlider == 3 ? "opaque" : ""}`}
         />
         <img
-          src={adlCustomerImg4}
+          src={adlCmrImg4}
           alt="project pic"
           className={`slide ${state.activeSlider == 4 ? "opaque" : ""}`}
         />
         <img
-          src={adlCustomerImg5}
+          src={adlCmrImg5}
           alt="project pic"
           className={`slide ${state.activeSlider == 5 ? "opaque" : ""}`}
         />
         <img
-          src={adlCustomerImg6}
+          src={adlCmrImg6}
           alt="project pic"
           className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
         />

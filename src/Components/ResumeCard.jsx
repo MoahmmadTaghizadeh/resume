@@ -1,12 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-// import { Link, glide, Navigation } from "react-tiger-transition";
-// import "react-tiger-transition/styles/main.min.css";
 
-// glide({
-//   name: "glide-right",
-//   direction: "right",
-// });
 
 export default function ResumeCard(props) {
   return (

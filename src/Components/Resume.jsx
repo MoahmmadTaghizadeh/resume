@@ -45,7 +45,7 @@ export default function Resume() {
         secondTitle={"وب اپلیکیشن تاکسی ابتکار"}
         thirdTitle={"Node.js - React.js - SQL Server"}
         show={true}
-        link={"/adltarabaranDriverPanel"}
+        link={"/webApplicationTaxi"}
       />
       <ResumeCard
         img={fahrzeugAdmin}
@@ -77,7 +77,7 @@ export default function Resume() {
         secondTitle={"شبکه اجتماعی آوید"}
         thirdTitle={"Node.js - Flutter - MySQL"}
         show={true}
-        link={"/adltarabaranDriverPanel"}
+        link={"/avid"}
       />
       <ResumeCard
         img={englishhob}

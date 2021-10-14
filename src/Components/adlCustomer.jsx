@@ -7,10 +7,6 @@ import adlCustomerImg3 from "../static/adlCustomer3.png";
 import adlCustomerImg4 from "../static/adlCustomer4.png";
 import adlCustomerImg5 from "../static/adlCustomer5.png";
 import adlCustomerImg6 from "../static/adlCustomer6.png";
-import "react-slideshow-image/dist/styles.css";
-import { Slide } from "react-slideshow-image";
-import slider from "./slider";
-import { Slideshow } from "./slider";
 import { useHistory } from "react-router";
 
 export default function AdlCustomer(props) {
