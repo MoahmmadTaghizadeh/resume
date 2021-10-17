@@ -53,7 +53,7 @@ export default function Resume() {
         secondTitle={"پنل ادمین"}
         thirdTitle={"Node.js - React.js - MySQL"}
         show={true}
-        link={"/adltarabaranDriverPanel"}
+        link={"/fahrzeugAdmin"}
       />
       <ResumeCard
         img={fahrzeug}
@@ -61,7 +61,7 @@ export default function Resume() {
         secondTitle={"پنل کاربری"}
         thirdTitle={"Node.js - React.js - MySQL"}
         show={true}
-        link={"/adltarabaranDriverPanel"}
+        link={"/fahrzeug"}
       />
       <ResumeCard
         img={taxi}
@@ -69,7 +69,7 @@ export default function Resume() {
         secondTitle={" پروژه مدیریت آژانس در کل کشور "}
         thirdTitle={"Node.js - React.js - SQL Server - MongoDB"}
         show={true}
-        link={"/adltarabaranDriverPanel"}
+        link={"/taxiCountry"}
       />
       <ResumeCard
         img={avidMain}
@@ -85,7 +85,7 @@ export default function Resume() {
         secondTitle={"سایت و پنل زبان آموزان"}
         thirdTitle={"Node.js - React.js - MySQL"}
         show={true}
-        link={"/adltarabaranDriverPanel"}
+        link={"/Englishhob"}
       />
       <ResumeCard
         img={order}

@@ -77,7 +77,7 @@
 
 .homePage {
   /* background-color: rgba(80, 170, 202, 500); */
-  background: url("../bg.png") no-repeat center;
+  /* background: url("../bg.png") no-repeat center; */
   min-height: 100vh;
   max-width: 100%;
   margin: 0;
@@ -89,7 +89,7 @@
 }
 
 .bg-home {
-  background-image: url("../bg.png");
+  /* background-image: url("../bg.png"); */
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -112,12 +112,13 @@
 nav {
   width: 100%;
   height: 50px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1000;
   /* background-color: #333333; */
   direction: rtl;
+  background-color: rgba(80, 170, 202, 500);
 }
 
 #wrapper {
@@ -135,6 +136,7 @@ nav {
   margin: 0 auto;
   height: 100%;
   text-align: center;
+  justify-content: center;
 }
 
 #wrapper li {
@@ -158,6 +160,7 @@ nav {
   letter-spacing: 0px;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.43s;
   transition-delay: 200ms;
+  min-width: 132px;
 }
 
 #wrapper span:hover {
@@ -168,6 +171,8 @@ nav {
 li.different {
   border: none;
   position: relative;
+  /* background-color: red; */
+  width: 100%;
 }
 
 li.different:hover {
@@ -200,6 +205,7 @@ li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: red; */
 }
 #resume {
   margin: 100px 0px;
@@ -208,7 +214,7 @@ li:hover {
   border-radius: 5px;
   /* border: 3px solid hotpink; */
   width: 55%;
-  min-width: 350px;
+  min-width: 320px;
   padding: 40px 80px;
 }
 .r {
@@ -217,6 +223,8 @@ li:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  /* background-color: red; */
+  /* background-color: red; */
 }
 .r h1 {
   width: 100%;
@@ -251,6 +259,7 @@ li:hover {
 .resumeCard {
   text-decoration: none;
   color: #000;
+  padding-right: 0px;
 }
 .resumeCard h4 {
   margin-bottom: 8px;
@@ -480,6 +489,7 @@ li:hover {
 }
 .actualJob {
   width: 90%;
+  min-width: 345px;
   min-height: 300px;
   box-shadow: 0px 0px 3.5px 3.5px rgb(224, 224, 224);
   border-radius: 6px;
@@ -521,7 +531,7 @@ li:hover {
 }
 .main {
   /* background-color: red; */
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -550,7 +560,7 @@ li:hover {
 .main span a {
   text-align: left;
   min-width: 200px;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   color: rgba(80, 170, 202, 500);
 }
 .main span a:hover{
@@ -586,7 +596,8 @@ li:hover {
 }
 .main header {
   /* box-shadow: 0px 3px 2px 3px rgb(228, 227, 227); */
-  padding: 8px;
+  padding: 20px;
+  padding-right: 35px;
   border-radius: 4px;
   min-height: 150px;
   min-width: 300px;
@@ -594,6 +605,17 @@ li:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5px;
+  color: rgb(0, 20, 7);
+  width: fit-content;
+  animation: animate 2s linear 1 alternate-reverse;
+  background: linear-gradient(90deg, #000, #000, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-background-clip: text;
+  /* background-clip: content-box; */
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  font-family: Vazir, "Courier New", Courier, monospace;
 } 
 .imgWrapper {
   /* background-color: red; */
@@ -612,8 +634,8 @@ li:hover {
   position: relative;
   padding: 5px;
   margin: 30px auto;
-  position: fixed;
-  top:15px;
+  position: absolute;
+  top: 30px;
   left: 15px;
   /* background: #000; */
   height: 50px;
@@ -662,24 +684,83 @@ li:hover {
 }
 @media screen and (max-width: 700px) {
   .imgWrapper {
-    min-height: 200px;
+    min-height: 150px;
   }
-
+  .main {
+    width: 90%;
+  }
+  .circle {
+    width: 12px;
+    height: 12px;
+  }
+  .activeCircle {
+    width: 18px;
+    height: 18px;
+  }
+  .main header h5 {
+    margin-bottom: 10px;
+  }
+  .main span {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .main span a {
+    font-size: 12px;
+  }
+ .body {
+   overflow-x: hidden;
+ }
+ nav {
+   font-size: 14px;
+ }
+ #wrapper span {
+   font-size: 15px;
+ }
+ #wrapper ul {
+   width: 100%;
+   padding-right: 0;
+   /* background-color: black; */
+ }
+ #wrapper li {
+   min-width: 117px; 
+ }
+ #resume {
+   box-shadow: 0px 0px 0px 0px black;
+ }
+.actualJob {
+  /* background-color: red;
+  box-shadow: 0px 0px 0px 0px black; */
+}
+.jobTemplate {
+  box-shadow: 0px 0px 0px 0px black;
+ 
+}
+.jobTemplate h3 {
+  margin-right: 16px;
+}
 }
 .swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 500px;
+  height: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
+height: 50%;
+width: 50%;
+}
+.fullScreen {
+  width: 100%;
+  height: 100vh;
 }

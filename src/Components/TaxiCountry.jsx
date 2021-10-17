@@ -1,23 +1,21 @@
 import React, { useState } from "react";
 import ResumeCard from "./ResumeCard";
-// import adlDriverimg from "../static/adlCustomer.png";
-import webAppImg1 from "../static/avid1.png";
-import webAppImg2 from "../static/avid2.png";
-import webAppImg3 from "../static/avid3.png";
-import webAppImg4 from "../static/avid4.png";
-import webAppImg5 from "../static/avid5.png";
-import webAppImg6 from "../static/avid6.png";
-import webAppImg7 from "../static/avid7.png";
-import webAppImg8 from "../static/avid8.png";
+import adlDriverimg from "../static/adlCustomer.png";
+import adlDriverImg1 from "../static/taxi1.png";
+import adlDriverImg2 from "../static/taxi2.png";
+import adlDriverImg3 from "../static/taxi3.png";
+import adlDriverImg4 from "../static/taxi4.png";
+import adlDriverImg5 from "../static/taxi5.png";
+import adlDriverImg6 from "../static/taxi6.png";
 import { useHistory } from "react-router";
 
-export default function WebApplicationTaxi(props) {
+export default function TaxiCountry(props) {
   const history = useHistory();
   const [state, setState] = useState({
     activeSlider: 1,
-    activeImageUrl: webAppImg1,
+    activeImageUrl: adlDriverImg1,
   });
-  const buttons = [1, 2, 3, 4, 5, 6, 7, 8];
+  const buttons = [1, 2, 3, 4, 5, 6];
 
   return (
     <div className="mainWrapper">
@@ -26,50 +24,40 @@ export default function WebApplicationTaxi(props) {
       </div>
       <div className="main">
         <header>
-          <h3>استارتاپ آوید</h3>
-          <h4>شبکه اجتماعی آوید</h4>
-          <h5> Node.js - Flutter - MySQL</h5>
+          <h3> شرکت ابتکار فناوران </h3>
+          <h4>پروژه مدیریت آژانس در کل کشور</h4>
+          <h5> Node.js - React.js - SQL Server - MongoDB</h5>
         </header>
         <div className="imgWrapper">
           <img
-            src={webAppImg1}
+            src={adlDriverImg1}
             alt="project pic"
             className={`slide ${state.activeSlider == 1 ? "opaque" : ""}`}
           />
           <img
-            src={webAppImg2}
+            src={adlDriverImg2}
             alt="project pic"
             className={`slide ${state.activeSlider == 2 ? "opaque" : ""}`}
           />
           <img
-            src={webAppImg3}
+            src={adlDriverImg3}
             alt="project pic"
             className={`slide ${state.activeSlider == 3 ? "opaque" : ""}`}
           />
           <img
-            src={webAppImg4}
+            src={adlDriverImg4}
             alt="project pic"
             className={`slide ${state.activeSlider == 4 ? "opaque" : ""}`}
           />
           <img
-            src={webAppImg5}
+            src={adlDriverImg5}
             alt="project pic"
             className={`slide ${state.activeSlider == 5 ? "opaque" : ""}`}
           />
           <img
-            src={webAppImg6}
+            src={adlDriverImg6}
             alt="project pic"
             className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
-          />
-          <img
-            src={webAppImg7}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 7 ? "opaque" : ""}`}
-          />
-          <img
-            src={webAppImg8}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 8 ? "opaque" : ""}`}
           />
         </div>
         <div className="buttonWrapper" style={{ marginBottom: "60px" }}>
@@ -126,45 +114,33 @@ export default function WebApplicationTaxi(props) {
           </button>
         </div>
         <span>
-          {" "}
-          آدرس سایـــــــت: (در حال توسعه)
-          <a
-            href="https://englishhob.ir/chat16/gettypes/en?type=0&groupCode=0"
+          در حال توسعه
+          {/* <a
+            href="http://fahrzeugtool.inosup.org/"
             target="_blank"
             rel="noreferrer"
           >
             {" "}
-            نمونه ای از مسیر اطلاعات انگلیسی{" "}
-          </a>
-        </span>
-        <span>
-          {" "}
-          آدرس سایـــــــت: (در حال توسعه)
-          <a
-            href="https://englishhob.ir/chat16/gettypes/fa?type=0&groupCode=0"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            نمونه ای از مسیر اطلاعات فارسی{" "}
-          </a>
+            https://fahrzeugtool.inosup.org{" "}
+          </a>  */}
         </span>
         <p className="description">
-          آوید یک شبکه اجتماعی است که بر مبنای تست شخصیتی مایر بریگز بنیان گزاری
-          شده است . امکانات مختلفی از جمله تشخیص تیپ شخصیتی کاربر با آزمون تهیه
-          شده، چت با بقیه کاربران، یافتن افراد نزدیک شخص با پروفایل پابلیک،
-          یافتن افرادی که تیپ شخصیتی مکمل فرد را دارند و... را داراست
+          این پروژه با 4 سطح دسترسی در سطح کشور تعریف شده است: کاربر اتحادیه
+          کشوری، کاربر اتحادیه شهری، مدیر آژانس و اپراتور آژانس. مدیر کشوری بر
+          تمامی استان ها و آژانس ها دسترسی دارد و همینطور مرحله به مرحله دسترسی
+          ها کم و کمتر می شوند. در نهایت اپراتور آژانس فقط می تواند برای آژانس
+          خود سفر ثبت کند و موقعیت رانندگان را روی نقشه مشاهده کند.
         </p>
         <p className="description">
-          این اپلیکیشن با فلاتر انجام شده است و قسمت backend آن توسط من انجام
-          شده و تمامی بخش سرور توسط من هندل شده است (تهیه هاست و آپلود فایل ها و
-          خرید دامنه)
+          این پروژه با ASP.NET و React پیش رفته بود اما با توجه به سیاست های
+          شرکت تصمیم بر این شد تمامی بخش ASP به Node تغییر پیدا کند. که این کار
+          توسط من انجام شد. هم چنین بخش سایدبار سایت نیز توسط من طراحی شد و صفحه
+          پیمایش مسیر نیز توسط من انجام شده است.
         </p>
         <p className="description">
-          این اپلیکیشن فعلا در حال توسعه است و امکاناتی مثل تست شخصیت و الگوریتم
-          تشخیص تیپ شخصیتی بر اساس پاسخ، چت با بقیه کاربران، یافتن افراد نزدیک
-          شخص و ویرایش پروفایل اجرا شده اند و بخش هایی مثل دو زبانه شدن نرم
-          افزار و یافتن افراد دارای تیپ شخصیتی مکمل فرد نیز در حال اجرا هستند
+          در صفحه پیمایش مسیر، تمامی مختصات های رانندگان در دیتابیس MongoDB هر
+          15 ثانیه ذخیره می شود . سپس با توجه به بازه زمانی انتخاب شده و کد
+          تاکسی مربوطه مسیر حرکت تاکسی روی نقشه کشیده می شود.
         </p>
         <br />
         <hr />
