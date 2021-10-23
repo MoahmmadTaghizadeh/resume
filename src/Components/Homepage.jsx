@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ProgressCircles from "./ProgressCircles";
 import { NavLink } from "react-router-dom";
 import Jobs from "./Jobs";
 import Resume from "./Resume";
-
+import nodesvg from "../static/node.svg";
+import { motion } from "framer-motion";
 export default function Homepage() {
   const [state, setState] = useState({
     isScrolled: false,
@@ -42,7 +43,7 @@ export default function Homepage() {
 
   const navLinks = [
     {
-      link: "/",
+      link: "/#",
       title: "مهارت ها",
     },
     {
@@ -55,7 +56,7 @@ export default function Homepage() {
     },
   ];
   let handleShow = (boolean) => {
-    console.log(state.activeAboutMe);
+    // console.log(state.activeAboutMe);
     setState((prevState) => ({
       ...prevState,
       isScrolled: boolean,
@@ -74,32 +75,73 @@ export default function Homepage() {
   const backToTop = () => {
     window.scroll({ top: 0, behavior: "smooth" });
   };
-
+  const reactRef = useRef(null);
+  const nodeRef = useRef(null);
+  const mysqlRef = useRef(null);
+  const mongoRef = useRef(null);
+  const mssqlRef = useRef(null);
+  const ts = useRef(null); 
+  const html = useRef(null); 
+  const css = useRef(null); 
+  const csharp = useRef(null); 
   return (
     <>
       <div className="homePage">
         <div className="bg-home">
+          <div className="example-container">
+            <motion.div className="drag-area-react" ref={reactRef}>
+              <motion.div drag dragConstraints={reactRef} className="react" />
+            </motion.div>
+            <motion.div className="drag-area-node" ref={nodeRef}>
+              <motion.div drag dragConstraints={nodeRef} className="node" />
+            </motion.div>
+            <motion.div className="drag-area-mysql" ref={mysqlRef}>
+              <motion.div drag dragConstraints={mysqlRef} className="mysql" />
+            </motion.div>
+            <motion.div className="drag-area-mongo" ref={mongoRef}>
+              <motion.div drag dragConstraints={mongoRef} className="mongo" />
+            </motion.div>
+            <motion.div className="drag-area-mssql" ref={mssqlRef}>
+              <motion.div drag dragConstraints={mssqlRef} className="mssql" />
+            </motion.div>
+            <motion.div className="drag-area-ts" ref={ts}>
+              <motion.div drag dragConstraints={ts} className="ts" />
+            </motion.div>
+            <motion.div className="drag-area-html" ref={html}>
+              <motion.div drag dragConstraints={html} className="html" />
+            </motion.div>
+            <motion.div className="drag-area-css" ref={css}>
+              <motion.div drag dragConstraints={css} className="css" />
+            </motion.div>
+            <motion.div className="drag-area-csharp" ref={csharp}>
+              <motion.div drag dragConstraints={csharp} className="csharp" />
+            </motion.div>
+          </div>
+
+          {/* <div className="mysql"></div> */}
+          {/* <div className="node"></div>
+          <div className="mongo"></div> */}
           <section id="home">
             <nav>
               <div id="wrapper">
                 <ul>
                   {navLinks.map((item, index) => (
-                    <li className="different">
-                      <a href={item.link} exact key={index}>
-                        <span className="aLink">{item.title} </span>
+                    <li className="different" key={index * 13}>
+                      <a href={item.link}  key={index}>
+                        <span className="aLink" key={index *12}>{item.title} </span>
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
             </nav>
-            <div className="about-me">
+            {/* <div className="about-me">
               <h2> {AboutMes[state.activeAboutMe].firstTitle} </h2>
               <h1> {AboutMes[state.activeAboutMe].secondTitle} </h1>
               <br />
               <p> {AboutMes[state.activeAboutMe].paragraph} </p>
               <ProgressCircles isActive={state.activeAboutMe} />
-            </div>
+            </div> */}
           </section>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ResumeCard from "./ResumeCard";
 import adlDriverimg from "../static/adlCustomer.png";
 import adlDriverImg1 from "../static/taxi1.png";
@@ -8,6 +8,7 @@ import adlDriverImg4 from "../static/taxi4.png";
 import adlDriverImg5 from "../static/taxi5.png";
 import adlDriverImg6 from "../static/taxi6.png";
 import { useHistory } from "react-router";
+import { useEffect } from "react";
 
 export default function TaxiCountry(props) {
   const history = useHistory();
@@ -16,10 +17,14 @@ export default function TaxiCountry(props) {
     activeImageUrl: adlDriverImg1,
   });
   const buttons = [1, 2, 3, 4, 5, 6];
+  const zoom = useRef();
 
+  useEffect(() => {
+    zoom.current.scrollIntoView(false);
+  }, []);
   return (
     <div className="mainWrapper">
-      <div className="button-up" onClick={() => history.goBack()}>
+      <div className="button-up" onClick={() => history.push("/#")} ref={zoom}>
         {" "}
       </div>
       <div className="main">
@@ -81,6 +86,7 @@ export default function TaxiCountry(props) {
           </button>
           {buttons.map((id, index) => (
             <button
+            key={index}
               className={`circle ${
                 state.activeSlider === id ? "activeCircle" : ""
               }`}

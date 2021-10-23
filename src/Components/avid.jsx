@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ResumeCard from "./ResumeCard";
 // import adlDriverimg from "../static/adlCustomer.png";
 import webAppImg1 from "../static/avid1.png";
@@ -10,6 +10,7 @@ import webAppImg6 from "../static/avid6.png";
 import webAppImg7 from "../static/avid7.png";
 import webAppImg8 from "../static/avid8.png";
 import { useHistory } from "react-router";
+import { useEffect } from "react";
 
 export default function WebApplicationTaxi(props) {
   const history = useHistory();
@@ -19,9 +20,15 @@ export default function WebApplicationTaxi(props) {
   });
   const buttons = [1, 2, 3, 4, 5, 6, 7, 8];
 
+  const zoom = useRef();
+
+  useEffect(() => {
+    zoom.current.scrollIntoView(false);
+  }, []);
+
   return (
     <div className="mainWrapper">
-      <div className="button-up" onClick={() => history.goBack()}>
+      <div className="button-up" onClick={() => history.push("/#")} ref={zoom}>
         {" "}
       </div>
       <div className="main">
@@ -74,6 +81,7 @@ export default function WebApplicationTaxi(props) {
         </div>
         <div className="buttonWrapper" style={{ marginBottom: "60px" }}>
           <button
+            
             className="b"
             onClick={(e) =>
               setState((prevState) => ({
@@ -93,6 +101,7 @@ export default function WebApplicationTaxi(props) {
           </button>
           {buttons.map((id, index) => (
             <button
+            key={index}
               className={`circle ${
                 state.activeSlider === id ? "activeCircle" : ""
               }`}

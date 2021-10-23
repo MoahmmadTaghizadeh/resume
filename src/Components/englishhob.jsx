@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ResumeCard from "./ResumeCard";
 import adlDriverimg from "../static/adlCustomer.png";
 import adlDriverImg1 from "../static/englishhob1.png";
@@ -8,18 +8,27 @@ import adlDriverImg4 from "../static/englishhob4.png";
 import adlDriverImg5 from "../static/englishhob5.png";
 import adlDriverImg6 from "../static/englishhob6.png";
 import { useHistory } from "react-router";
+import { useEffect } from "react";
 
 export default function Englishhob(props) {
   const history = useHistory();
+
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlDriverImg1,
   });
+
   const buttons = [1, 2, 3, 4, 5, 6];
+
+  const zoom = useRef();
+
+  useEffect(() => {
+    zoom.current.scrollIntoView(false);
+  }, []);
 
   return (
     <div className="mainWrapper">
-      <div className="button-up" onClick={() => history.goBack()}>
+      <div className="button-up" onClick={() => history.push("/#")} ref={zoom}>
         {" "}
       </div>
       <div className="main">
@@ -81,6 +90,7 @@ export default function Englishhob(props) {
           </button>
           {buttons.map((id, index) => (
             <button
+            key={index}
               className={`circle ${
                 state.activeSlider === id ? "activeCircle" : ""
               }`}
@@ -122,17 +132,17 @@ export default function Englishhob(props) {
           </a>
         </span>
         <p className="description">
-          این پنل برای کاربران شرکت فارزویگ ایجاد شده است تا در محیط وب خودروهای
-          موجود در انبار را ثبت کنند و مرحله به مرحله فرایند ثبت خودرو، شناسایی
-          وضعیت خودرو، بررسی چک پوینت های موجود برای خودرو و تعیین وضعیت برای آن
-          ها (از جمله: سالم، نیازمند بررسی، نیازمند قطعه و ...)، گرفتن گزارش از
-          بخش های مختلف کار و ... را انجام دهند.
+          سایت انگلیش هاب برای تدریس زبان انگلیسی و اشتراک دوره های رایگان
+          آنلاین طراحی شده است. در این سایت که اولین سایت ساخته شده توسط من است،
+          صفحات مختلفی وجود دارد و پنلی برای زبان آموزان تعبیه شده است تا در آن
+          کلاس های ثبت نامی خود و پیشرفت خود در دوره های آنلاین را ببینند و یا
+          با اساتید و دیگر زبان آموزان در محیط سایت چت کنند و آموخته های خود را
+          به اشتراک بگذارند
         </p>
         <p className="description">
-          در این پروژه من به عنوان فریلنسر توسعه و دیباگینگ کار را بر عهده داشتم
-          و بخش Mega Button را نیز به این پنل افزودم که با فشردن آن تمامی چک
-          پوینت های اساسی سبز می شوند و صفحه جدیدی برای کاربر ایجاد می شود تا یک
-          سری چک پوینت غیراساسی نیز کنترل شود
+          در این پروژه من به عنوان فریلنسر تمامی بخش های کار را بر عهده داشتم و
+          ایده این آموزشگاه نیز توسط من بوده تا در محیط اسکایپ معلومات زبان
+          انگلیسی خودم را با زبان آموزان به اشتراک بگذارم
         </p>
         <p className="description">
           تمامی این بخش ها به صورت فول استک یعنی هم بخش React و هم بخش Node و

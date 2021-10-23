@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ResumeCard from "./ResumeCard";
 import adlDriverimg from "../static/adlCustomer.png";
 import adlDriverImg1 from "../static/adlDriver1.png";
@@ -8,18 +8,26 @@ import adlDriverImg4 from "../static/adlDriver4.png";
 import adlDriverImg5 from "../static/adlDriver5.png";
 import adlDriverImg6 from "../static/adlDriver6.png";
 import { useHistory } from "react-router";
+import { useEffect } from "react";
 
 export default function AdlDriver(props) {
-  const history = useHistory()
+  const history = useHistory();
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlDriverImg1,
   });
   const buttons = [1, 2, 3, 4, 5, 6];
+  const zoom = useRef();
+
+  useEffect(() => {
+    zoom.current.scrollIntoView(false);
+  }, []);
 
   return (
     <div className="mainWrapper">
-      <div className="button-up" onClick={()=>history.goBack() }> </div>
+      <div className="button-up" onClick={() => history.push("/#")} ref={zoom}>
+        {" "}
+      </div>
       <div className="main">
         <header>
           <h3> شرکت باربری عدل ترابران توس </h3>
@@ -27,36 +35,36 @@ export default function AdlDriver(props) {
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
         <div className="imgWrapper">
-        <img
-          src={adlDriverImg1}
-          alt="project pic"
-          className={`slide ${state.activeSlider == 1 ? "opaque" : ""}`}
-        />
-        <img
-          src={adlDriverImg2}
-          alt="project pic"
-          className={`slide ${state.activeSlider == 2 ? "opaque" : ""}`}
-        />
-        <img
-          src={adlDriverImg3}
-          alt="project pic"
-          className={`slide ${state.activeSlider == 3 ? "opaque" : ""}`}
-        />
-        <img
-          src={adlDriverImg4}
-          alt="project pic"
-          className={`slide ${state.activeSlider == 4 ? "opaque" : ""}`}
-        />
-        <img
-          src={adlDriverImg5}
-          alt="project pic"
-          className={`slide ${state.activeSlider == 5 ? "opaque" : ""}`}
-        />
-        <img
-          src={adlDriverImg6}
-          alt="project pic"
-          className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
-        />
+          <img
+            src={adlDriverImg1}
+            alt="project pic"
+            className={`slide ${state.activeSlider == 1 ? "opaque" : ""}`}
+          />
+          <img
+            src={adlDriverImg2}
+            alt="project pic"
+            className={`slide ${state.activeSlider == 2 ? "opaque" : ""}`}
+          />
+          <img
+            src={adlDriverImg3}
+            alt="project pic"
+            className={`slide ${state.activeSlider == 3 ? "opaque" : ""}`}
+          />
+          <img
+            src={adlDriverImg4}
+            alt="project pic"
+            className={`slide ${state.activeSlider == 4 ? "opaque" : ""}`}
+          />
+          <img
+            src={adlDriverImg5}
+            alt="project pic"
+            className={`slide ${state.activeSlider == 5 ? "opaque" : ""}`}
+          />
+          <img
+            src={adlDriverImg6}
+            alt="project pic"
+            className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
+          />
         </div>
         <div className="buttonWrapper" style={{ marginBottom: "60px" }}>
           <button
@@ -75,10 +83,11 @@ export default function AdlDriver(props) {
               trigger="hover"
               colors="primary:#000,secondary:#000"
               style={{ width: "30px", height: "30px" }}
-            ></lord-icon>{" "}{" "}
+            ></lord-icon>{" "}
           </button>
           {buttons.map((id, index) => (
             <button
+            key={index}
               className={`circle ${
                 state.activeSlider === id ? "activeCircle" : ""
               }`}

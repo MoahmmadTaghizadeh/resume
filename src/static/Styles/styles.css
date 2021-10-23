@@ -76,22 +76,23 @@
 }
 
 .homePage {
-  /* background-color: rgba(80, 170, 202, 500); */
-  /* background: url("../bg.png") no-repeat center; */
-  min-height: 100vh;
-  max-width: 100%;
   margin: 0;
   padding-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* background: #888; */
+  /* border: 10px solid #fff; */
+  overflow: hidden;
+
 }
 
 .bg-home {
-  /* background-image: url("../bg.png"); */
+  background-image: url("../atomgrid.jpg");
   height: 100vh;
-  width: 100vw;
+  /* margin-top: 400px; */
+  width: 100% !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,6 +100,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* background-color: red; */
 }
 
 .navLink {
@@ -118,7 +120,8 @@ nav {
   z-index: 1000;
   /* background-color: #333333; */
   direction: rtl;
-  background-color: rgba(80, 170, 202, 500);
+  background-color: rgb(21, 31, 66);
+  opacity: 0.84;
 }
 
 #wrapper {
@@ -275,6 +278,7 @@ li:hover {
   z-index: 200;
   padding-right: 20px;
   opacity: 0.95;
+  min-width: 330px;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.43s;
   transition-delay: 200ms;
   display: flex;
@@ -338,7 +342,7 @@ li:hover {
   font-size: 32px;
   height: 30px;
   margin-top: 18px;
-  animation: titleAppear 5000ms forwards infinite;
+  animation: titleAppear 5000ms alternate infinite;
   animation-delay: 0ms;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -682,7 +686,379 @@ li:hover {
   top: 10px;
   transform: rotate(225deg);
 }
+
+/* .swiper {
+  width: 500px;
+  height: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+height: 50%;
+width: 50%;
+}
+.fullScreen {
+  width: 100%;
+  height: 100vh;
+} */
+.example-container {
+  height: 100vh;
+  width: 100%;
+}
+.example-container .react {
+  background-image: url("../react.svg") !important;
+  border-radius: 50%;
+  cursor: grab;
+  cursor: -moz-grab;
+  width: 150px;
+  height: 150px ;
+  position: absolute;
+  top: calc(50% - 0px / 2);
+  left: 4px ;
+  background: #fff;
+}
+.example-container .node {
+  background-image: url("../node.svg") !important;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: grab;
+  cursor: -moz-grab;
+  width: 150px;
+  height: 150px !important;
+  position: absolute;
+  top: calc(50% - 130px / 2);
+  left: calc(50% - 80px / 2);
+  background: #fff;
+}
+/* .example-container div {
+  background-image: url("../adl.png") !important;
+  background-size: contain;
+  border-radius: 30px;
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: calc(50% - 150px / 2);
+  left: calc(50% - 150px / 2);
+} */
+.example-container .mysql {
+  background-image: url("../mysql.svg") !important;
+  background-size: contain;
+  cursor: grab;
+  cursor: -moz-grab;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50% - 200px / 2);
+  right: 60%;
+  background: #fff;
+  border-radius: 50%;
+}
+.example-container .mongo {
+  background-image: url("../mongo.svg") !important;
+  background-size: contain;
+  cursor: grab;
+  cursor: -moz-grab;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50% - 150px / 2);
+  left: calc(12.5%);
+  background: #fff;
+  /* padding: 5px; */
+  border-radius: 50%;
+}
+.example-container .mssql {
+  background-image: url("../mssql.png") !important;
+  background-size: contain;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  cursor: grab;
+  cursor: -moz-grab;
+  position: absolute;
+  top: calc(50% - 200px / 2);
+  left: calc(50% - 10px / 2);
+  background: #fff;
+  border-radius: 50%;
+
+}
+.example-container .ts {
+  background-image: url("../typescript.svg") !important;
+  background-size: contain;
+  /* border-radius: 30px; */
+  width: 150px;
+  height: 150px;
+  cursor: grab;
+  cursor: -moz-grab;
+  position: absolute;
+  top: calc(50% - 0px / 2);
+  left: calc(10% - 180px / 2);
+  background: #fff;
+  border-radius: 50%;
+}
+.example-container .html {
+  background-image: url("../html2.svg") !important;
+  background-size: contain;
+  /* border-radius: 30px; */
+  width: 150px;
+  height: 150px;
+  cursor: grab;
+  cursor: -moz-grab;
+  position: absolute;
+  top: calc(50% - 130px / 2);
+  left: 69%;
+  background: #fff;
+  border-radius: 50%;
+}
+.example-container .css {
+  background-image: url("../css.svg") !important;
+  background-position: center;
+  background-size: contain;
+  background-position: center;
+  /* border-radius: 30px; */
+  width: 150px;
+  height: 150px;
+
+  cursor: grab;
+  cursor: -moz-grab;
+  position: absolute;
+  top: calc(50% - 130px / 2);
+  left: calc(70%);
+  background: #fff;
+  border-radius: 50%;
+}
+.example-container .csharp {
+  background-image: url("../csharp.svg") !important;
+  background-size: contain;
+  /* border-radius: 30px; */
+  width: 150px;
+  height: 150px;
+  cursor: grab;
+  cursor: -moz-grab;
+  position: absolute;
+  bottom: calc(0%);
+  left: calc(76%);
+  background: #fff;
+  border-radius: 50%;
+}
+.drag-area-react {
+  position: absolute;
+  width: 50%;
+  height: 15vh;
+  border-radius: 30px;
+  top: 100px;
+  left: 10%;
+  animation: reactShake 20s alternate 0s infinite;
+}
+.drag-area-node {
+  position: absolute;
+  width: 50%;
+  height: 15vh;
+    /* animation: logoSpin 15s alternate 0s infinite; */
+  border-radius: 30px;
+  top: 100px;
+  right: 0;
+  animation: nodeShake 15s alternate 0s infinite;
+}
+.drag-area-mysql {
+  position: absolute;
+  width: 50%;
+  height: 15vh;
+    animation: mysqlShake 15s alternate 0s infinite;
+  border-radius: 30px;
+  bottom: 0px;
+  right: 0;
+}
+.drag-area-mssql {
+  position: absolute;
+  width: 50%;
+  height: 15vh;
+    animation: mysqlShake 15s alternate 0s infinite;
+  border-radius: 30px;
+  bottom: 0px;
+  left: 0;
+}
+.drag-area-mongo {
+  position: absolute;
+  width: 50%;
+  height: 15vh;
+    animation: mongoShake 15s alternate 0s infinite;
+  border-radius: 30px;
+  bottom: 25%;
+  left: 0;
+}
+.drag-area-ts {
+  position: absolute;
+  width: 50%;
+  height: 15vh;
+    animation: logoSpin 15s alternate 0s infinite;
+  border-radius: 30px;
+  bottom: 25%;
+  right: 0;
+}
+.drag-area-html {
+  position: absolute;
+  width: 20%;
+  height: 15vh;
+  animation: htmlShake 15s alternate 0s infinite;
+  border-radius: 30px;
+  bottom: 10%;
+  left: 65%;
+}
+.drag-area-css {
+  position: absolute;
+  width: 20%;
+  height: 15vh;
+  animation: cssShake 15s alternate 0s infinite;
+  border-radius: 30px;
+  top: 40%;
+  left: 60%;
+}
+.drag-area-csharp {
+  position: absolute;
+  width: 50%;
+  height: 15vh;
+  animation: logoSpin 15s alternate 0s infinite;
+  border-radius: 30px;
+  top: 40%;
+  left: 0;
+}
+
+.example-container .drag-area {
+  opacity: 0.2;
+  background: transparent;
+  position: absolute;
+  width: 90%;
+  height: 70vh;
+  border-radius: 30px;
+  /* background: #000; */
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+}
+@keyframes logoSpin {
+  /* from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  } */
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  
+}
+@keyframes htmlShake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0.5deg); }
+    100% { transform: translate(0px, -5px) rotate(-1.5deg); }
+  
+}
+@keyframes cssShake {
+  0% { transform: translate(-2px, -1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(3px, -2px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(4px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -4px) rotate(2deg); }
+  90% { transform: translate(1px, 2px) rotate(0.5deg); }
+  100% { transform: translate(4px, -5px) rotate(-1.5deg); }
+
+}
+
+@keyframes nodeShake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -1px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(-3deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(3px, -2px) rotate(3deg); }
+  50% { transform: translate(-2px, -2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(2deg); }
+  70% { transform: translate(2px, 1.3px) rotate(-1deg); }
+  80% { transform: translate(-1px, 2.4px) rotate(2deg); }
+  90% { transform: translate(1.4px, 2px) rotate(0.5deg); }
+  100% { transform: translate(1px, -2px) rotate(-1.5deg); }
+}
+@keyframes reactShake {
+  0% { transform: translate(2px, -1px) rotate(2deg); }
+  10% { transform: translate(-1px, -4px) rotate(-1.9deg); }
+  20% { transform: translate(-3px, 0px) rotate(-3deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -2px) rotate(3deg); }
+  50% { transform: translate(-4px, -2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(2.7deg); }
+  70% { transform: translate(2px, 2.3px) rotate(-1deg); }
+  80% { transform: translate(-1px, 1.4px) rotate(2deg); }
+  90% { transform: translate(1.7px, 2px) rotate(2.5deg); }
+  100% { transform: translate(-6px, -2px) rotate(-3.5deg); }
+}
+@keyframes mongoShake {
+  0% { transform: translate(1px, -1px) rotate(2deg); }
+  10% { transform: translate(-1px, -1px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(-3deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -2px) rotate(3deg); }
+  50% { transform: translate(-1px, -2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(3deg); }
+  70% { transform: translate(2px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, 1.4px) rotate(2deg); }
+  90% { transform: translate(1.7px, 1px) rotate(2deg); }
+  100% { transform: translate(-1px, -2px) rotate(-1deg); }
+}
+@keyframes mysqlShake {
+  0% { transform: translate(1px, -1px) rotate(2deg); }
+  10% { transform: translate(-2px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(-3deg); }
+  30% { transform: translate(3px, 1px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(3deg); }
+  50% { transform: translate(-1px, -1px) rotate(-2deg); }
+  60% { transform: translate(-3px, 1px) rotate(3deg); }
+  70% { transform: translate(1px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, 1.4px) rotate(2deg); }
+  90% { transform: translate(1.7px, 1px) rotate(2deg); }
+  100% { transform: translate(-1px, -1px) rotate(-1deg); }
+}
+
 @media screen and (max-width: 700px) {
+  /* body {
+    overflow-x: hidden;
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
   .imgWrapper {
     min-height: 150px;
   }
@@ -712,12 +1088,17 @@ li:hover {
  }
  nav {
    font-size: 14px;
+   /* background-color: red; */
+   padding-right: 0%;
+   width: 100%;
+   /* width: 100% !important; */
  }
+
  #wrapper span {
    font-size: 15px;
  }
  #wrapper ul {
-   width: 100%;
+   width: 100% !important;
    padding-right: 0;
    /* background-color: black; */
  }
@@ -726,6 +1107,11 @@ li:hover {
  }
  #resume {
    box-shadow: 0px 0px 0px 0px black;
+   padding-right: 45px;
+ }
+ .resumeCard div {
+   max-width: 320px !important;
+   /* background-color: red; */
  }
 .actualJob {
   /* background-color: red;
@@ -738,29 +1124,80 @@ li:hover {
 .jobTemplate h3 {
   margin-right: 16px;
 }
-}
-.swiper {
-  width: 500px;
-  height: 700px;
+.example-container .react {
+  background-image: url("../reactMb.svg") !important;
+  width: 75px !important;
+  height: 75px !important;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
+}
+.example-container .node {
+  background-image: url("../nodeMb.svg") !important;
+  width: 75px !important;
+  height: 75px !important;
+  position: absolute;
+}
+.example-container .csharp {
+  background-image: url("../csharpMb.svg") !important;
+  width: 75px !important;
+  height: 75px !important;
+  position: absolute;
+}
+.example-container .mongo {
+  background-image: url("../mongoMb.svg") !important;
+  width: 75px !important;
+  height: 75px !important;
+  position: absolute;
+}
+.example-container .mssql {
+  background-image: url("../mssqlMb.png") !important;
+  width: 75px !important;
+  height: 75px !important;
+  position: absolute;
+}
+.example-container .mysql {
+  background-image: url("../mysqlMb.svg") !important;
+  width: 75px !important;
+  height: 75px !important;
+  position: absolute;
+}
+.example-container .ts {
+  background-image: url("../typescriptMb.svg") !important;
+  width: 75px !important;
+  height: 75px !important;
+  position: absolute;
+}
+.example-container .html {
+  background-image: url("../htmlMb.svg") !important;
+  width: 75px !important;
+  height: 75px !important;
+  position: absolute;
+}
+.example-container .css {
+  background-image: url("../cssMb.svg") !important;
+  width: 75px !important;
+  height: 75px !important;
+  position: absolute;
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
+
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-height: 50%;
-width: 50%;
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
 }
-.fullScreen {
-  width: 100%;
-  height: 100vh;
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(43, 62, 129); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(21, 31, 66); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
