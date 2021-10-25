@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SlideRoutes from 'react-slide-routes';
+import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
+
 import "./App.css";
 import "./static/Styles/styles.css";
 import Homepage from "./Components/Homepage";
@@ -8,16 +10,19 @@ import AdlCustomer from "./Components/adlCustomer";
 import AdlCmr from "./Components/adlCmr";
 import WebApplicationTaxi from "./Components/webApp";
 import Avid from "./Components/avid";
-// import "swiper/css/bundle";
+
 
 import "swiper/swiper-bundle.css";
 import Fahrzeug from "./Components/fahrzeug";
 import FahrzeugAdmin from "./Components/fahrzeugAdmin";
 import TaxiCountry from "./Components/TaxiCountry";
 import Englishhob from "./Components/englishhob";
-// import { TransitionGroup, CSSTransition } from "react-transition-group";
-// import { Link, glide } from "react-tiger-transition";
+import Zoshk from "./Components/zoshk";
+import Taxi1830 from "./Components/taxi1830";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 function App() {
+  // const location = useLocation();
   const routes = [
     { path: "/", component: Homepage },
     { path: "/adltarabaranDriverPanel", component: AdlDriver },
@@ -29,10 +34,13 @@ function App() {
     { path: "/fahrzeugAdmin", component: FahrzeugAdmin },
     { path: "/taxiCountry", component: TaxiCountry },
     { path: "/Englishhob", component: Englishhob },
+    { path: "/zoshk", component: Zoshk },
+    { path: "/taxi1830", component: Taxi1830 },
   ];
   return (
     <Router>
       <Switch>
+      {/* <SlideRoutes > */}
         {routes.map((route, index) => (
           <Route
             key={index}
@@ -41,6 +49,7 @@ function App() {
             path={route.path}
           />
         ))}
+        {/* </SlideRoutes> */}
       </Switch>
     </Router>
   );

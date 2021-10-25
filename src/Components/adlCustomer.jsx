@@ -1,21 +1,36 @@
 import React, { useRef, useState } from "react";
 import ResumeCard from "./ResumeCard";
 import adlDriverimg from "../static/adlCustomer.png";
-import adlCustomerImg1 from "../static/adlCustomer1.png";
-import adlCustomerImg2 from "../static/adlCustomer2.png";
+import adlCustomerImg1 from "../static/adlCustomer2.png";
+import adlCustomerImg2 from "../static/adlCustomer1.png";
 import adlCustomerImg3 from "../static/adlCustomer3.png";
 import adlCustomerImg4 from "../static/adlCustomer4.png";
 import adlCustomerImg5 from "../static/adlCustomer5.png";
 import adlCustomerImg6 from "../static/adlCustomer6.png";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
-
+import Slider from "react-slick";
 export default function AdlCustomer(props) {
   const history = useHistory();
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlCustomerImg1,
   });
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+  const images = [
+    { url: adlCustomerImg1, title: "adlCustomerImg1" },
+    { url: adlCustomerImg2, title: "adlCustomerImg1" },
+    { url: adlCustomerImg3, title: "adlCustomerImg1" },
+    { url: adlCustomerImg4, title: "adlCustomerImg1" },
+    { url: adlCustomerImg5, title: "adlCustomerImg1" },
+    { url: adlCustomerImg6, title: "adlCustomerImg1" },
+  ];
   const buttons = [1, 2, 3, 4, 5, 6];
 
   const zoom = useRef();
@@ -23,7 +38,7 @@ export default function AdlCustomer(props) {
   useEffect(() => {
     zoom.current.scrollIntoView(false);
   }, []);
-
+  let arr = <div>next</div>
   return (
     <div className="mainWrapper">
       <div className="button-up" onClick={() => history.push("/#")} ref={zoom}>
@@ -35,7 +50,27 @@ export default function AdlCustomer(props) {
           <h4>پنل باربری صاحب کالا </h4>
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
-        <div className="imgWrapper">
+        <Slider {...settings}   >
+          <div>
+            <img src={adlCustomerImg1} />
+          </div>
+          <div>
+              <img src={adlCustomerImg2} />
+          </div>
+          <div>
+          <img src={adlCustomerImg3} />
+          </div>
+          <div>
+          <img src={adlCustomerImg4} />
+          </div>
+          <div>
+          <img src={adlCustomerImg5} />
+          </div>
+          <div>
+          <img src={adlCustomerImg6} />
+          </div>
+        </Slider>
+        {/* <div className="imgWrapper">
           <img
             src={adlCustomerImg1}
             alt="project pic"
@@ -120,7 +155,7 @@ export default function AdlCustomer(props) {
               style={{ width: "30px", height: "30px" }}
             ></lord-icon>{" "}
           </button>
-        </div>
+        </div> */}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}

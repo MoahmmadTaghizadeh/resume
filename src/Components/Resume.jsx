@@ -93,7 +93,7 @@ export default function Resume() {
         secondTitle={"پنل مدیریت سفارشات"}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
         show={true}
-        link={"/adltarabaranDriverPanel"}
+        link={"/zoshk"}
       />
       <ResumeCard
         img={taxi1830}
@@ -101,7 +101,7 @@ export default function Resume() {
         secondTitle={"پنل اپراتور تلفن و بیسیم"}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
         show={true}
-        link={"/adltarabaranDriverPanel"}
+        link={"/taxi1830"}
       />
     </div>
   );

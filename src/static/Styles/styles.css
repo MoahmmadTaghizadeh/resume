@@ -541,7 +541,8 @@ li:hover {
   align-items: center;
   justify-content: flex-start;
   padding: 20px;
-  width: 60%;
+  width: 80%;
+  background-color: red;
 }
 .description {
   line-height: 30px;
@@ -571,12 +572,24 @@ li:hover {
   color: rgb(165, 34, 137);
 }
 .main img {
-  max-width: 65%;
+  height: 60vh;
+  width: 100%;
+  /* box-shadow: 0px 4px 4px 4px rgb(219, 215, 215); */
+  border-radius: 18px; 
+  cursor: grab;
+  /* max-width: 65%;
   margin-bottom: 30px;
   transition: all 1000ms ease-out;
-  /* min-width: 80%; */
   box-shadow: 0px 4px 4px 4px rgb(219, 215, 215);
-  border-radius: 18px;
+  border-radius: 18px; */
+}
+.sld {
+  min-height: 60vh;
+  max-width: 65%;
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slide {
   -webkit-transition: opacity 1s ease-in-out;
@@ -601,7 +614,7 @@ li:hover {
 .main header {
   /* box-shadow: 0px 3px 2px 3px rgb(228, 227, 227); */
   padding: 20px;
-  padding-right: 35px;
+  padding-right: 49px;
   border-radius: 4px;
   min-height: 150px;
   min-width: 300px;
@@ -687,31 +700,19 @@ li:hover {
   transform: rotate(225deg);
 }
 
-/* .swiper {
-  width: 500px;
-  height: 700px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
-
-.swiper-slide img {
-  display: block;
+.swiper-container {
   width: 100%;
-height: 50%;
-width: 50%;
-}
-.fullScreen {
-  width: 100%;
-  height: 100vh;
-} */
+  height: 100%;
+  /*this gives the dimension of slider container*/
+  /*these values will make the container as big as the parent div*/
+  overflow: hidden;
+  /*important parameter to not disrupt the container when slides increases in coverflow and other effect*/
+  }
+  .swiper-slide {
+  width:600px;
+  height:300px;
+  /*this one holds the dimension of each slides and can be changed according to the user wish*/
+  }
 .example-container {
   height: 100vh;
   width: 100%;
@@ -727,6 +728,7 @@ width: 50%;
   top: calc(50% - 0px / 2);
   left: 4px ;
   background: #fff;
+  /* background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); */
 }
 .example-container .node {
   background-image: url("../node.svg") !important;
@@ -884,21 +886,23 @@ width: 50%;
 }
 .drag-area-mssql {
   position: absolute;
-  width: 50%;
+  width: 30%;
   height: 15vh;
+  /* background-color: red; */
     animation: mysqlShake 15s alternate 0s infinite;
   border-radius: 30px;
   bottom: 0px;
-  left: 0;
+  left: 20%;
 }
 .drag-area-mongo {
   position: absolute;
-  width: 50%;
+  width: 40%;
+
   height: 15vh;
     animation: mongoShake 15s alternate 0s infinite;
   border-radius: 30px;
   bottom: 25%;
-  left: 0;
+  left: 10%;
 }
 .drag-area-ts {
   position: absolute;
@@ -1082,6 +1086,7 @@ width: 50%;
   }
   .main span a {
     font-size: 12px;
+
   }
  .body {
    overflow-x: hidden;
@@ -1179,7 +1184,9 @@ width: 50%;
   position: absolute;
 }
 
-
+.main img {
+  height: 30vh;
+}
 }
 
 /* width */

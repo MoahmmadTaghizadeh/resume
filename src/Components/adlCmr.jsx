@@ -9,6 +9,16 @@ import adlCmrImg5 from "../static/adlCmr5.png";
 import adlCmrImg6 from "../static/adlCmr6.png";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
+import "swiper/swiper-bundle.min.css";
+
+// swiper core styles
+import "swiper/swiper.min.css";
+
+// modules styles
+import "swiper/components/navigation/navigation.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, EffectCoverflow } from "swiper";
 
 export default function AdlCmr(props) {
   const history = useHistory();
@@ -19,6 +29,8 @@ export default function AdlCmr(props) {
   const buttons = [1, 2, 3, 4, 5, 6];
 
   const zoom = useRef();
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
 
   useEffect(() => {
     zoom.current.scrollIntoView(false);
@@ -35,7 +47,46 @@ export default function AdlCmr(props) {
           <h4>پنل باربری شرکت حمل و نقل </h4>
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
-        <div className="imgWrapper">
+        <Swiper
+          style={{ maxWidth: "90%" }}
+          modules={[Pagination, Navigation]}
+          spaceBetween={10}
+          slidesPerView={"auto"}
+          centeredSlides={true}
+          // navigation
+          pagination={{
+            type: "progressbar",
+          }}
+          navigation={{
+            prevEl: navigationPrevRef.current,
+            nextEl: navigationNextRef.current,
+          }}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            {" "}
+            <img src={adlCmrImg1} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={adlCmrImg2} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={adlCmrImg3} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={adlCmrImg4} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={adlCmrImg5} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={adlCmrImg6} />
+          </SwiperSlide>
+          <div ref={navigationPrevRef} />
+          <div ref={navigationNextRef} />
+        </Swiper>
+        {/* <div className="imgWrapper">
           <img
             src={adlCmrImg1}
             alt="project pic"
@@ -66,8 +117,8 @@ export default function AdlCmr(props) {
             alt="project pic"
             className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
           />
-        </div>
-        <div className="buttonWrapper" style={{ marginBottom: "60px" }}>
+        </div> */}
+        {/* <div className="buttonWrapper" style={{ marginBottom: "60px" }}>
           <button
             className="b"
             onClick={(e) =>
@@ -88,7 +139,7 @@ export default function AdlCmr(props) {
           </button>
           {buttons.map((id, index) => (
             <button
-            key={index}
+              key={index}
               className={`circle ${
                 state.activeSlider === id ? "activeCircle" : ""
               }`}
@@ -120,7 +171,7 @@ export default function AdlCmr(props) {
               style={{ width: "30px", height: "30px" }}
             ></lord-icon>{" "}
           </button>
-        </div>
+        </div> */}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}
