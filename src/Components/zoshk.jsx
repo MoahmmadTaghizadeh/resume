@@ -9,17 +9,34 @@ import adlDriverImg5 from "../static/order5.png";
 import adlDriverImg6 from "../static/order6.png";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
-
+import Lightbox from "react-awesome-lightbox";
+import Slider from "react-slick";
+import "react-awesome-lightbox/build/style.css";
 export default function Zoshk(props) {
   const history = useHistory();
 
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlDriverImg1,
+    isOpen: false,
+    selectedImg: 0
   });
-
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   const buttons = [1, 2, 3, 4, 5, 6];
-
+  const images = [
+    { url: adlDriverImg1, title: "adlDriverImg1" },
+    { url: adlDriverImg2, title: "adlDriverImg1" },
+    { url: adlDriverImg3, title: "adlDriverImg1" },
+    { url: adlDriverImg4, title: "adlDriverImg1" },
+    { url: adlDriverImg5, title: "adlDriverImg1" },
+    { url: adlDriverImg6, title: "adlCustomerImg1" },
+  ];
   const zoom = useRef();
 
   useEffect(() => {
@@ -37,7 +54,30 @@ export default function Zoshk(props) {
           <h4>پنل مدیریت سفارشات </h4>
           <h5> ASP.NET - React.js - SQL Server </h5>
         </header>
-        <div className="imgWrapper">
+        <div className="album">
+            {images.map((img, index) => (
+                <img src={img.url} alt={img.title} key={index + "img"}
+                onClick={() => {
+                  setState((prevState)=> ({
+                    ...prevState,
+                    isOpen: true ,
+                    selectedImg: index
+                  }))
+                }}
+                />
+            ))}
+        </div>
+        {state.isOpen && (
+            <Lightbox
+              images={images}
+              allowRotate={false}
+              style={{height: '100vh'}}
+              onClose={() => setState({ isOpen: false })}
+              startIndex={state.selectedImg}
+              keyboardInteraction={true}
+            />
+          )}
+        {/* <div className="imgWrapper">
           <img
             src={adlDriverImg1}
             alt="project pic"
@@ -122,7 +162,7 @@ export default function Zoshk(props) {
               style={{ width: "30px", height: "30px" }}
             ></lord-icon>{" "}
           </button>
-        </div>
+        </div> */}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}

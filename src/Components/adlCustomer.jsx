@@ -51,7 +51,8 @@ export default function AdlCustomer(props) {
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
         <Slider {...settings}   >
-          <div>
+          
+          <div >
             <img src={adlCustomerImg1} />
           </div>
           <div>

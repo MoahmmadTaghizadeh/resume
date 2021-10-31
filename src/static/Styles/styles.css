@@ -542,7 +542,7 @@ li:hover {
   justify-content: flex-start;
   padding: 20px;
   width: 80%;
-  background-color: red;
+  /* background-color: red; */
 }
 .description {
   line-height: 30px;
@@ -572,11 +572,12 @@ li:hover {
   color: rgb(165, 34, 137);
 }
 .main img {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   /* box-shadow: 0px 4px 4px 4px rgb(219, 215, 215); */
   border-radius: 18px; 
   cursor: grab;
+  z-index: 10000;
   /* max-width: 65%;
   margin-bottom: 30px;
   transition: all 1000ms ease-out;
@@ -872,17 +873,17 @@ li:hover {
     /* animation: logoSpin 15s alternate 0s infinite; */
   border-radius: 30px;
   top: 100px;
-  right: 0;
+  right: 20%;
   animation: nodeShake 15s alternate 0s infinite;
 }
 .drag-area-mysql {
   position: absolute;
-  width: 50%;
+  width: 30%;
   height: 15vh;
     animation: mysqlShake 15s alternate 0s infinite;
   border-radius: 30px;
   bottom: 0px;
-  right: 0;
+  right: 10%;
 }
 .drag-area-mssql {
   position: absolute;
@@ -906,12 +907,12 @@ li:hover {
 }
 .drag-area-ts {
   position: absolute;
-  width: 50%;
+  width: 30%;
   height: 15vh;
     animation: logoSpin 15s alternate 0s infinite;
   border-radius: 30px;
   bottom: 25%;
-  right: 0;
+  right: 10%;
 }
 .drag-area-html {
   position: absolute;
@@ -933,12 +934,12 @@ li:hover {
 }
 .drag-area-csharp {
   position: absolute;
-  width: 50%;
+  width: 40%;
   height: 15vh;
   animation: logoSpin 15s alternate 0s infinite;
   border-radius: 30px;
   top: 40%;
-  left: 0;
+  left: 20%;
 }
 
 .example-container .drag-area {
@@ -1053,8 +1054,29 @@ li:hover {
   90% { transform: translate(1.7px, 1px) rotate(2deg); }
   100% { transform: translate(-1px, -1px) rotate(-1deg); }
 }
+.album {
+  max-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  margin-bottom: 60px;
+  border: 3px solid rgb(12, 0, 66);
+}
+.album img {
+  width: 32%;
+  max-width: 350px;
+  max-height: 50%;
+  border-radius: 0;
+  margin: 2px;
+}
 
 @media screen and (max-width: 700px) {
+  .album {
+    max-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
   /* body {
     overflow-x: hidden;
     width: 100%;
@@ -1208,3 +1230,4 @@ li:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
