@@ -1,11 +1,7 @@
 @font-face {
   font-family: Vazir;
   src: url("../fonts/Farsi-Digits/Vazir-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-FD.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-FD.ttf") format("truetype");
+  src: url("../fonts/Farsi-Digits/Vazir-FD.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-FD.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-FD.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-FD.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -13,11 +9,7 @@
 @font-face {
   font-family: Vazir;
   src: url("../fonts/Farsi-Digits/Vazir-Bold-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Bold-FD.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Bold-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Bold-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Bold-FD.ttf") format("truetype");
+  src: url("../fonts/Farsi-Digits/Vazir-Bold-FD.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Bold-FD.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Bold-FD.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Bold-FD.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -25,11 +17,7 @@
 @font-face {
   font-family: Vazir;
   src: url("../fonts/Farsi-Digits/Vazir-Black-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Black-FD.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Black-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Black-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Black-FD.ttf") format("truetype");
+  src: url("../fonts/Farsi-Digits/Vazir-Black-FD.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Black-FD.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Black-FD.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Black-FD.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -37,11 +25,7 @@
 @font-face {
   font-family: Vazir;
   src: url("../fonts/Farsi-Digits/Vazir-Medium-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Medium-FD.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Medium-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Medium-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Medium-FD.ttf") format("truetype");
+  src: url("../fonts/Farsi-Digits/Vazir-Medium-FD.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Medium-FD.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Medium-FD.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Medium-FD.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -49,11 +33,7 @@
 @font-face {
   font-family: Vazir;
   src: url("../fonts/Farsi-Digits/Vazir-Light-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Light-FD.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Light-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Light-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Light-FD.ttf") format("truetype");
+  src: url("../fonts/Farsi-Digits/Vazir-Light-FD.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Light-FD.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Light-FD.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Light-FD.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
@@ -61,11 +41,7 @@
 @font-face {
   font-family: Vazir;
   src: url("../fonts/Farsi-Digits/Vazir-Thin-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Thin-FD.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Thin-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Thin-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Thin-FD.ttf") format("truetype");
+  src: url("../fonts/Farsi-Digits/Vazir-Thin-FD.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Thin-FD.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Thin-FD.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Thin-FD.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
@@ -85,7 +61,6 @@
   /* background: #888; */
   /* border: 10px solid #fff; */
   overflow: hidden;
-
 }
 
 .bg-home {
@@ -202,6 +177,7 @@ li:hover {
   width: 100%;
   left: 0;
 }
+
 .resumeWrapper {
   width: 100%;
   /* background-color: red; */
@@ -210,6 +186,7 @@ li:hover {
   align-items: center;
   /* background-color: red; */
 }
+
 #resume {
   margin: 100px 0px;
   /* width: 60%; */
@@ -220,6 +197,7 @@ li:hover {
   min-width: 320px;
   padding: 40px 80px;
 }
+
 .r {
   display: flex;
   flex-direction: row;
@@ -229,10 +207,12 @@ li:hover {
   /* background-color: red; */
   /* background-color: red; */
 }
+
 .r h1 {
   width: 100%;
   /* background-color: red; */
 }
+
 .resumeCard {
   width: 350px;
   max-width: 350px;
@@ -243,6 +223,7 @@ li:hover {
   margin-bottom: 25px;
   padding-right: 20px;
 }
+
 .resumeCard img {
   min-height: 230px;
   padding-right: 20px;
@@ -256,17 +237,21 @@ li:hover {
   max-width: 280px;
   z-index: 100;
 }
+
 .pageSlider {
   background-color: red;
 }
+
 .resumeCard {
   text-decoration: none;
   color: #000;
   padding-right: 0px;
 }
+
 .resumeCard h4 {
   margin-bottom: 8px;
 }
+
 .resumeCard div {
   background-color: #fff;
   padding: 5px;
@@ -285,22 +270,28 @@ li:hover {
   flex-direction: column;
   justify-content: center;
 }
+
 .s {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 2.43s;
   transition-delay: 200ms;
 }
+
 .resumeCard:hover {
   cursor: pointer;
 }
+
 .resumeCard:hover .resumeCard2 {
   color: rgba(80, 170, 202, 500);
 }
+
 .resumeCard:hover div {
   opacity: 0.8;
 }
+
 .resumeCard:hover .s {
   transform: translateY(-15px);
 }
+
 .about-me {
   width: 350px;
   height: 430px;
@@ -338,6 +329,7 @@ li:hover {
   background-color: #555;
   /* Add a dark-grey background on hover */
 }
+
 .about-me h1 {
   font-size: 32px;
   height: 30px;
@@ -347,6 +339,7 @@ li:hover {
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
+
 .about-me h2 {
   font-size: 25px;
   height: 15px;
@@ -355,12 +348,14 @@ li:hover {
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
+
 .about-me p {
   line-height: 35px;
   animation: fade 5000ms forwards infinite;
   animation-delay: 0ms;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
+
 @keyframes fade {
   from {
     opacity: 0;
@@ -369,6 +364,7 @@ li:hover {
     opacity: 1;
   }
 }
+
 @keyframes titleAppear2 {
   from {
     font-size: 0px;
@@ -379,6 +375,7 @@ li:hover {
     opacity: 1;
   }
 }
+
 @keyframes titleAppear {
   from {
     font-size: 0px;
@@ -389,6 +386,7 @@ li:hover {
     opacity: 1;
   }
 }
+
 .progress {
   display: flex;
   flex-direction: column;
@@ -415,6 +413,7 @@ li:hover {
   min-width: 300px;
   /* box-shadow: 1px 1px 1px 2px rgb(219, 219, 219); */
 }
+
 .circle {
   height: 18px;
   width: 18px;
@@ -428,6 +427,7 @@ li:hover {
   align-items: center;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.43s;
 }
+
 .activeCircle {
   height: 27px;
   background-color: seagreen;
@@ -441,14 +441,17 @@ li:hover {
   justify-content: center;
   align-items: center;
 }
+
 .resumeCard2 {
   margin-bottom: 10px;
 }
+
 .loader {
   height: 10px;
   width: 100%;
   /* background-color: blue; */
 }
+
 #jobs {
   display: flex;
   flex-direction: column;
@@ -456,6 +459,7 @@ li:hover {
   align-items: center;
   /* background-color: red; */
 }
+
 .jobTemplate {
   width: 55%;
   min-width: 350px;
@@ -468,11 +472,13 @@ li:hover {
   justify-content: center;
   align-items: center;
 }
+
 .jobTemplate div {
   width: 100%;
   /* background-color: red; */
   text-align: right;
 }
+
 .jobTemplate h3 {
   width: fit-content;
   padding: 5px;
@@ -480,17 +486,20 @@ li:hover {
   border-bottom: 4px solid red;
   margin-bottom: 15px;
 }
+
 .jobTemplate h4 {
   /* display: flex; */
   width: 100%;
   text-align: center;
 }
+
 .jobTemplate img {
   height: 100%;
   width: 100%;
   filter: blur(2px);
   z-index: -2;
 }
+
 .actualJob {
   width: 90%;
   min-width: 345px;
@@ -504,6 +513,7 @@ li:hover {
   background-size: contain;
   background-position-y: 67%;
 }
+
 .actualJob h5 {
   margin-top: 5px;
   color: rgb(0, 20, 7);
@@ -517,9 +527,11 @@ li:hover {
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   font-family: Vazir, "Courier New", Courier, monospace;
 }
+
 .actualJob ul {
   list-style: none;
 }
+
 @keyframes animate {
   0% {
     /* background-position: -500%; */
@@ -528,11 +540,13 @@ li:hover {
     background-position: 500%;
   }
 }
+
 .mainWrapper {
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
 .main {
   /* background-color: red; */
   /* height: 100vh; */
@@ -544,6 +558,7 @@ li:hover {
   width: 80%;
   /* background-color: red; */
 }
+
 .description {
   line-height: 30px;
   text-align: justify;
@@ -552,38 +567,36 @@ li:hover {
   /* text-align: right; */
   margin-top: 25px;
   color: #888;
-  text-indent: 30px;
+  /* text-indent: 30px; */
 }
+
 .main span {
   text-align: right;
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-weight: 700;
-
 }
+
 .main span a {
   text-align: left;
   min-width: 200px;
   letter-spacing: 0px;
   color: rgba(80, 170, 202, 500);
 }
-.main span a:hover{
+
+.main span a:hover {
   color: rgb(165, 34, 137);
 }
+
 .main img {
   height: 70vh;
   width: 100%;
-  /* box-shadow: 0px 4px 4px 4px rgb(219, 215, 215); */
-  border-radius: 18px; 
+  border-radius: 9px;
   cursor: grab;
   z-index: 10000;
-  /* max-width: 65%;
-  margin-bottom: 30px;
-  transition: all 1000ms ease-out;
-  box-shadow: 0px 4px 4px 4px rgb(219, 215, 215);
-  border-radius: 18px; */
 }
+
 .sld {
   min-height: 60vh;
   max-width: 65%;
@@ -592,26 +605,29 @@ li:hover {
   justify-content: center;
   align-items: center;
 }
+
 .slide {
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  opacity:0;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   position: absolute;
   z-index: -100;
   transform: translateX(1000px);
   transform: scale(0);
 }
+
 .opaque {
-  opacity:1;
+  opacity: 1;
   transform: translateX(0px);
   transform: scale(1);
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=1);
 }
+
 .main header {
   /* box-shadow: 0px 3px 2px 3px rgb(228, 227, 227); */
   padding: 20px;
@@ -634,7 +650,8 @@ li:hover {
   /* background-clip: content-box; */
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   font-family: Vazir, "Courier New", Courier, monospace;
-} 
+}
+
 .imgWrapper {
   /* background-color: red; */
   min-height: 500px;
@@ -642,13 +659,14 @@ li:hover {
   justify-content: center;
   width: 100%;
 }
+
 .buttonWrapper button.b {
   background: transparent;
   border: none;
   outline: none;
 }
-.button-up,
-.button-down {
+
+.button-up, .button-down {
   position: relative;
   padding: 5px;
   margin: 30px auto;
@@ -674,12 +692,12 @@ li:hover {
   color: #ffffff;
   cursor: pointer;
 }
+
 .button-up:hover .button-up::after {
   color: #ffffff;
 }
 
-.button-up::after,
-.button-down::after {
+.button-up::after, .button-down::after {
   content: "";
   position: absolute;
   left: 20px;
@@ -689,8 +707,8 @@ li:hover {
   height: 25px;
   border-bottom: 2px solid rgba(80, 170, 202, 500);
   border-left: 2px solid rgba(80, 170, 202, 500);
-
 }
+
 .button-up::after {
   top: 20px;
   transform: rotate(45deg);
@@ -708,29 +726,33 @@ li:hover {
   /*these values will make the container as big as the parent div*/
   overflow: hidden;
   /*important parameter to not disrupt the container when slides increases in coverflow and other effect*/
-  }
-  .swiper-slide {
-  width:600px;
-  height:300px;
+}
+
+.swiper-slide {
+  width: 600px;
+  height: 300px;
   /*this one holds the dimension of each slides and can be changed according to the user wish*/
-  }
+}
+
 .example-container {
   height: 100vh;
   width: 100%;
 }
+
 .example-container .react {
   background-image: url("../react.svg") !important;
   border-radius: 50%;
   cursor: grab;
   cursor: -moz-grab;
   width: 150px;
-  height: 150px ;
+  height: 150px;
   position: absolute;
   top: calc(50% - 0px / 2);
-  left: 4px ;
+  left: 4px;
   background: #fff;
   /* background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); */
 }
+
 .example-container .node {
   background-image: url("../node.svg") !important;
   background-size: cover;
@@ -744,6 +766,7 @@ li:hover {
   left: calc(50% - 80px / 2);
   background: #fff;
 }
+
 /* .example-container div {
   background-image: url("../adl.png") !important;
   background-size: contain;
@@ -754,6 +777,7 @@ li:hover {
   top: calc(50% - 150px / 2);
   left: calc(50% - 150px / 2);
 } */
+
 .example-container .mysql {
   background-image: url("../mysql.svg") !important;
   background-size: contain;
@@ -768,6 +792,7 @@ li:hover {
   background: #fff;
   border-radius: 50%;
 }
+
 .example-container .mongo {
   background-image: url("../mongo.svg") !important;
   background-size: contain;
@@ -783,6 +808,7 @@ li:hover {
   /* padding: 5px; */
   border-radius: 50%;
 }
+
 .example-container .mssql {
   background-image: url("../mssql.png") !important;
   background-size: contain;
@@ -796,8 +822,8 @@ li:hover {
   left: calc(50% - 10px / 2);
   background: #fff;
   border-radius: 50%;
-
 }
+
 .example-container .ts {
   background-image: url("../typescript.svg") !important;
   background-size: contain;
@@ -812,6 +838,7 @@ li:hover {
   background: #fff;
   border-radius: 50%;
 }
+
 .example-container .html {
   background-image: url("../html2.svg") !important;
   background-size: contain;
@@ -826,6 +853,7 @@ li:hover {
   background: #fff;
   border-radius: 50%;
 }
+
 .example-container .css {
   background-image: url("../css.svg") !important;
   background-position: center;
@@ -834,7 +862,6 @@ li:hover {
   /* border-radius: 30px; */
   width: 150px;
   height: 150px;
-
   cursor: grab;
   cursor: -moz-grab;
   position: absolute;
@@ -843,6 +870,7 @@ li:hover {
   background: #fff;
   border-radius: 50%;
 }
+
 .example-container .csharp {
   background-image: url("../csharp.svg") !important;
   background-size: contain;
@@ -857,6 +885,7 @@ li:hover {
   background: #fff;
   border-radius: 50%;
 }
+
 .drag-area-react {
   position: absolute;
   width: 50%;
@@ -866,54 +895,59 @@ li:hover {
   left: 10%;
   animation: reactShake 20s alternate 0s infinite;
 }
+
 .drag-area-node {
   position: absolute;
   width: 50%;
   height: 15vh;
-    /* animation: logoSpin 15s alternate 0s infinite; */
+  /* animation: logoSpin 15s alternate 0s infinite; */
   border-radius: 30px;
   top: 100px;
   right: 20%;
   animation: nodeShake 15s alternate 0s infinite;
 }
+
 .drag-area-mysql {
   position: absolute;
   width: 30%;
   height: 15vh;
-    animation: mysqlShake 15s alternate 0s infinite;
+  animation: mysqlShake 15s alternate 0s infinite;
   border-radius: 30px;
   bottom: 0px;
   right: 10%;
 }
+
 .drag-area-mssql {
   position: absolute;
   width: 30%;
   height: 15vh;
   /* background-color: red; */
-    animation: mysqlShake 15s alternate 0s infinite;
+  animation: mysqlShake 15s alternate 0s infinite;
   border-radius: 30px;
   bottom: 0px;
   left: 20%;
 }
+
 .drag-area-mongo {
   position: absolute;
   width: 40%;
-
   height: 15vh;
-    animation: mongoShake 15s alternate 0s infinite;
+  animation: mongoShake 15s alternate 0s infinite;
   border-radius: 30px;
   bottom: 25%;
   left: 10%;
 }
+
 .drag-area-ts {
   position: absolute;
   width: 30%;
   height: 15vh;
-    animation: logoSpin 15s alternate 0s infinite;
+  animation: logoSpin 15s alternate 0s infinite;
   border-radius: 30px;
   bottom: 25%;
   right: 10%;
 }
+
 .drag-area-html {
   position: absolute;
   width: 20%;
@@ -923,6 +957,7 @@ li:hover {
   bottom: 10%;
   left: 65%;
 }
+
 .drag-area-css {
   position: absolute;
   width: 20%;
@@ -932,6 +967,7 @@ li:hover {
   top: 40%;
   left: 60%;
 }
+
 .drag-area-csharp {
   position: absolute;
   width: 40%;
@@ -953,6 +989,7 @@ li:hover {
   top: calc(50% - 150px);
   left: calc(50% - 150px);
 }
+
 @keyframes logoSpin {
   /* from {
     transform: rotate(0deg);
@@ -960,131 +997,347 @@ li:hover {
   to {
     transform: rotate(360deg);
   } */
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
-@keyframes htmlShake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0.5deg); }
-    100% { transform: translate(0px, -5px) rotate(-1.5deg); }
-  
-}
-@keyframes cssShake {
-  0% { transform: translate(-2px, -1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(3px, -2px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(4px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -4px) rotate(2deg); }
-  90% { transform: translate(1px, 2px) rotate(0.5deg); }
-  100% { transform: translate(4px, -5px) rotate(-1.5deg); }
 
+@keyframes htmlShake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0.5deg);
+  }
+  100% {
+    transform: translate(0px, -5px) rotate(-1.5deg);
+  }
+}
+
+@keyframes cssShake {
+  0% {
+    transform: translate(-2px, -1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(3px, -2px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(4px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -4px) rotate(2deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0.5deg);
+  }
+  100% {
+    transform: translate(4px, -5px) rotate(-1.5deg);
+  }
 }
 
 @keyframes nodeShake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -1px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(-3deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(3px, -2px) rotate(3deg); }
-  50% { transform: translate(-2px, -2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(2deg); }
-  70% { transform: translate(2px, 1.3px) rotate(-1deg); }
-  80% { transform: translate(-1px, 2.4px) rotate(2deg); }
-  90% { transform: translate(1.4px, 2px) rotate(0.5deg); }
-  100% { transform: translate(1px, -2px) rotate(-1.5deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(-3deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(3px, -2px) rotate(3deg);
+  }
+  50% {
+    transform: translate(-2px, -2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(2deg);
+  }
+  70% {
+    transform: translate(2px, 1.3px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, 2.4px) rotate(2deg);
+  }
+  90% {
+    transform: translate(1.4px, 2px) rotate(0.5deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1.5deg);
+  }
 }
+
 @keyframes reactShake {
-  0% { transform: translate(2px, -1px) rotate(2deg); }
-  10% { transform: translate(-1px, -4px) rotate(-1.9deg); }
-  20% { transform: translate(-3px, 0px) rotate(-3deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -2px) rotate(3deg); }
-  50% { transform: translate(-4px, -2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(2.7deg); }
-  70% { transform: translate(2px, 2.3px) rotate(-1deg); }
-  80% { transform: translate(-1px, 1.4px) rotate(2deg); }
-  90% { transform: translate(1.7px, 2px) rotate(2.5deg); }
-  100% { transform: translate(-6px, -2px) rotate(-3.5deg); }
+  0% {
+    transform: translate(2px, -1px) rotate(2deg);
+  }
+  10% {
+    transform: translate(-1px, -4px) rotate(-1.9deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(-3deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -2px) rotate(3deg);
+  }
+  50% {
+    transform: translate(-4px, -2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(2.7deg);
+  }
+  70% {
+    transform: translate(2px, 2.3px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, 1.4px) rotate(2deg);
+  }
+  90% {
+    transform: translate(1.7px, 2px) rotate(2.5deg);
+  }
+  100% {
+    transform: translate(-6px, -2px) rotate(-3.5deg);
+  }
 }
+
 @keyframes mongoShake {
-  0% { transform: translate(1px, -1px) rotate(2deg); }
-  10% { transform: translate(-1px, -1px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(-3deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -2px) rotate(3deg); }
-  50% { transform: translate(-1px, -2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(3deg); }
-  70% { transform: translate(2px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, 1.4px) rotate(2deg); }
-  90% { transform: translate(1.7px, 1px) rotate(2deg); }
-  100% { transform: translate(-1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, -1px) rotate(2deg);
+  }
+  10% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(-3deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -2px) rotate(3deg);
+  }
+  50% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(3deg);
+  }
+  70% {
+    transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, 1.4px) rotate(2deg);
+  }
+  90% {
+    transform: translate(1.7px, 1px) rotate(2deg);
+  }
+  100% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
 }
+
 @keyframes mysqlShake {
-  0% { transform: translate(1px, -1px) rotate(2deg); }
-  10% { transform: translate(-2px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(-3deg); }
-  30% { transform: translate(3px, 1px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(3deg); }
-  50% { transform: translate(-1px, -1px) rotate(-2deg); }
-  60% { transform: translate(-3px, 1px) rotate(3deg); }
-  70% { transform: translate(1px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, 1.4px) rotate(2deg); }
-  90% { transform: translate(1.7px, 1px) rotate(2deg); }
-  100% { transform: translate(-1px, -1px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, -1px) rotate(2deg);
+  }
+  10% {
+    transform: translate(-2px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(-3deg);
+  }
+  30% {
+    transform: translate(3px, 1px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(3deg);
+  }
+  50% {
+    transform: translate(-1px, -1px) rotate(-2deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(3deg);
+  }
+  70% {
+    transform: translate(1px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, 1.4px) rotate(2deg);
+  }
+  90% {
+    transform: translate(1.7px, 1px) rotate(2deg);
+  }
+  100% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
 }
+
 .album {
-  max-height: 400px;
+  max-height: 425px;
+  padding: 5px;
   display: flex;
   flex-wrap: wrap;
   min-width: 100%;
   margin-bottom: 60px;
-  border: 3px solid rgb(12, 0, 66);
+  box-shadow: 0px 1px 2px 3px rgb(230, 230, 230);
+  border-radius: 3px;
+  background-image: url("../wood.jpg");
 }
+
 .album img {
+  border-radius: 3px;
   width: 32%;
-  max-width: 350px;
-  max-height: 50%;
+  max-height: 200px;
   border-radius: 0;
-  margin: 2px;
+  margin: 4px auto;
+  box-shadow: 0px 2px 1px 1px rgb(230, 230, 230);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  z-index: 1000;
+  background-image: url("../c.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avidAlbum {
+  height: fit-content !important;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  margin-bottom: 60px;
+  box-shadow: 0px 1px 2px 3px rgb(230, 230, 230);
+  border-radius: 3px;
+  background-image: url("../wood.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.avidAlbum img {
+  max-width: 20% !important;
+  margin: 4px 4px;
+  max-height: 400px;
+
+}
+
+.album img:hover {
+  transform: scale3d(1.12, 1.12, 1);
+  z-index: 2000;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 1700px) {
+  .album img {
+    max-width: 350px;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .lb-show-mobile {
+    display: flex !important;
+    direction: ltr !important;
+  }
   .album {
-    max-height: 200px;
+    height: fit-content !important;
     display: flex;
     flex-wrap: wrap;
     min-width: 100%;
+    padding: 10px;
   }
-  /* body {
-    overflow-x: hidden;
-    width: 100%;
-    direction: rtl;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
+  .album img {
+    width: 45%;
+    max-width: 200px;
+    max-height: 100px;
+  }
+  .avidAlbum img {
+    max-width: 20% !important;
+    margin: 4px 4px;
+    max-height: 150px;
+  
+  }
   .imgWrapper {
     min-height: 150px;
   }
@@ -1108,126 +1361,133 @@ li:hover {
   }
   .main span a {
     font-size: 12px;
-
   }
- .body {
-   overflow-x: hidden;
- }
- nav {
-   font-size: 14px;
-   /* background-color: red; */
-   padding-right: 0%;
-   width: 100%;
-   /* width: 100% !important; */
- }
-
- #wrapper span {
-   font-size: 15px;
- }
- #wrapper ul {
-   width: 100% !important;
-   padding-right: 0;
-   /* background-color: black; */
- }
- #wrapper li {
-   min-width: 117px; 
- }
- #resume {
-   box-shadow: 0px 0px 0px 0px black;
-   padding-right: 45px;
- }
- .resumeCard div {
-   max-width: 320px !important;
-   /* background-color: red; */
- }
-.actualJob {
-  /* background-color: red;
+  .body {
+    overflow-x: hidden;
+  }
+  nav {
+    font-size: 14px;
+    /* background-color: red; */
+    padding-right: 0%;
+    width: 100%;
+    /* width: 100% !important; */
+  }
+  #wrapper span {
+    font-size: 15px;
+  }
+  #wrapper ul {
+    width: 100% !important;
+    padding-right: 0;
+    /* background-color: black; */
+  }
+  #wrapper li {
+    min-width: 117px;
+  }
+  #resume {
+    box-shadow: 0px 0px 0px 0px black;
+    padding-right: 45px;
+  }
+  .resumeCard div {
+    max-width: 320px !important;
+    /* background-color: red; */
+  }
+  .actualJob {
+    /* background-color: red;
   box-shadow: 0px 0px 0px 0px black; */
-}
-.jobTemplate {
-  box-shadow: 0px 0px 0px 0px black;
- 
-}
-.jobTemplate h3 {
-  margin-right: 16px;
-}
-.example-container .react {
-  background-image: url("../reactMb.svg") !important;
-  width: 75px !important;
-  height: 75px !important;
-  position: absolute;
-}
-.example-container .node {
-  background-image: url("../nodeMb.svg") !important;
-  width: 75px !important;
-  height: 75px !important;
-  position: absolute;
-}
-.example-container .csharp {
-  background-image: url("../csharpMb.svg") !important;
-  width: 75px !important;
-  height: 75px !important;
-  position: absolute;
-}
-.example-container .mongo {
-  background-image: url("../mongoMb.svg") !important;
-  width: 75px !important;
-  height: 75px !important;
-  position: absolute;
-}
-.example-container .mssql {
-  background-image: url("../mssqlMb.png") !important;
-  width: 75px !important;
-  height: 75px !important;
-  position: absolute;
-}
-.example-container .mysql {
-  background-image: url("../mysqlMb.svg") !important;
-  width: 75px !important;
-  height: 75px !important;
-  position: absolute;
-}
-.example-container .ts {
-  background-image: url("../typescriptMb.svg") !important;
-  width: 75px !important;
-  height: 75px !important;
-  position: absolute;
-}
-.example-container .html {
-  background-image: url("../htmlMb.svg") !important;
-  width: 75px !important;
-  height: 75px !important;
-  position: absolute;
-}
-.example-container .css {
-  background-image: url("../cssMb.svg") !important;
-  width: 75px !important;
-  height: 75px !important;
-  position: absolute;
-}
-
-.main img {
-  height: 30vh;
-}
+  }
+  .jobTemplate {
+    box-shadow: 0px 0px 0px 0px black;
+  }
+  .jobTemplate h3 {
+    margin-right: 16px;
+  }
+  .example-container .react {
+    background-image: url("../reactMb.svg") !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute;
+  }
+  .example-container .node {
+    background-image: url("../nodeMb.svg") !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute;
+  }
+  .example-container .csharp {
+    background-image: url("../csharpMb.svg") !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute;
+  }
+  .example-container .mongo {
+    background-image: url("../mongoMb.svg") !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute;
+  }
+  .example-container .mssql {
+    background-image: url("../mssqlMb.png") !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute;
+  }
+  .example-container .mysql {
+    background-image: url("../mysqlMb.svg") !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute;
+  }
+  .example-container .ts {
+    background-image: url("../typescriptMb.svg") !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute;
+  }
+  .example-container .html {
+    background-image: url("../htmlMb.svg") !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute;
+  }
+  .example-container .css {
+    background-image: url("../cssMb.svg") !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute;
+  }
+  .main img {
+    height: 30vh;
+  }
 }
 
 /* width */
+
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
+
 ::-webkit-scrollbar-track {
-  background: rgb(43, 62, 129); 
+  background: rgb(43, 62, 129);
 }
- 
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
-  background: rgb(21, 31, 66); 
+  background: rgb(21, 31, 66);
 }
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
+.mobile-controls .lb-show-mobile {
+  direction: rtl !important;
+}
+
+.lb-header {
+  direction: ltr;
+}

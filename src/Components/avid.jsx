@@ -11,15 +11,28 @@ import webAppImg7 from "../static/avid7.png";
 import webAppImg8 from "../static/avid8.png";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
+import Lightbox from "react-awesome-lightbox";
+import "react-awesome-lightbox/build/style.css";
 
 export default function WebApplicationTaxi(props) {
   const history = useHistory();
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: webAppImg1,
+    selectedImg: 0, 
+    isOpen: false
   });
   const buttons = [1, 2, 3, 4, 5, 6, 7, 8];
-
+  const images = [
+    { url: webAppImg1, title: "انتخاب مبدا" },
+    { url: webAppImg2, title: "سایدبار اپ" },
+    { url: webAppImg3, title: "سفر های ذخیره شده" },
+    { url: webAppImg4, title: "امکانات سفر " },
+    { url: webAppImg5, title: "صفحه ورود" },
+    { url: webAppImg6, title: "درخواست تاکسی" },
+    { url: webAppImg7, title: "درخواست تاکسی" },
+    { url: webAppImg8, title: "درخواست تاکسی" },
+  ];
   const zoom = useRef();
 
   useEffect(() => {
@@ -37,103 +50,29 @@ export default function WebApplicationTaxi(props) {
           <h4>شبکه اجتماعی آوید</h4>
           <h5> Node.js - Flutter - MySQL</h5>
         </header>
-        <div className="imgWrapper">
-          <img
-            src={webAppImg1}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 1 ? "opaque" : ""}`}
-          />
-          <img
-            src={webAppImg2}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 2 ? "opaque" : ""}`}
-          />
-          <img
-            src={webAppImg3}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 3 ? "opaque" : ""}`}
-          />
-          <img
-            src={webAppImg4}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 4 ? "opaque" : ""}`}
-          />
-          <img
-            src={webAppImg5}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 5 ? "opaque" : ""}`}
-          />
-          <img
-            src={webAppImg6}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
-          />
-          <img
-            src={webAppImg7}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 7 ? "opaque" : ""}`}
-          />
-          <img
-            src={webAppImg8}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 8 ? "opaque" : ""}`}
-          />
+        <div className="avidAlbum">
+            {images.map((img, index) => (
+                <img src={img.url} alt={img.title} key={index + "img"} 
+                onClick={() => {
+                  setState((prevState)=> ({
+                    ...prevState,
+                    isOpen: true ,
+                    selectedImg: index
+                  }))
+                }}
+                />
+            ))}
         </div>
-        <div className="buttonWrapper" style={{ marginBottom: "60px" }}>
-          <button
-            
-            className="b"
-            onClick={(e) =>
-              setState((prevState) => ({
-                ...prevState,
-                activeSlider:
-                  state.activeSlider !== 1 ? state.activeSlider - 1 : 6,
-              }))
-            }
-          >
-            {" "}
-            <lord-icon
-              src="https://cdn.lordicon.com/iiueiwdd.json"
-              trigger="hover"
-              colors="primary:#000,secondary:#000"
-              style={{ width: "30px", height: "30px" }}
-            ></lord-icon>{" "}
-          </button>
-          {buttons.map((id, index) => (
-            <button
-            key={index}
-              className={`circle ${
-                state.activeSlider === id ? "activeCircle" : ""
-              }`}
-              onClick={(e) =>
-                setState((prevState) => ({
-                  ...prevState,
-                  activeSlider: id,
-                }))
-              }
-            ></button>
-          ))}
-          <button
-            className="b"
-            onClick={(e) =>
-              setState((prevState) => ({
-                ...prevState,
-                activeSlider:
-                  state.activeSlider !== buttons.length
-                    ? state.activeSlider + 1
-                    : 1,
-              }))
-            }
-          >
-            {" "}
-            <lord-icon
-              src="https://cdn.lordicon.com/gkditgni.json"
-              trigger="hover"
-              colors="primary:#000,secondary:#000"
-              style={{ width: "30px", height: "30px" }}
-            ></lord-icon>{" "}
-          </button>
-        </div>
+        {/* {state.isOpen && (
+            <Lightbox
+              images={images}
+              allowRotate={false}
+              style={{height: '100vh'}}
+              onClose={() => setState({ isOpen: false })}
+              startIndex={state.selectedImg}
+              keyboardInteraction={true}
+            />
+          )} */}
         <span>
           {" "}
           آدرس سایـــــــت: (در حال توسعه)

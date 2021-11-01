@@ -19,22 +19,32 @@ import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, EffectCoverflow } from "swiper";
+import Lightbox from "react-awesome-lightbox";
+import "react-awesome-lightbox/build/style.css";
 
 export default function AdlCmr(props) {
   const history = useHistory();
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlCmrImg1,
+    selectedImg: 0, 
+    isOpen: false
   });
   const buttons = [1, 2, 3, 4, 5, 6];
-
+  const images = [
+    { url: adlCmrImg1, title: "سالن اعلام بار" },
+    { url: adlCmrImg2, title: "پذیرش بار"  },
+    { url: adlCmrImg3, title:  "صدور حواله" },
+    { url: adlCmrImg4, title: "اسکن حواله" },
+    { url: adlCmrImg5, title: "تایید بارنامه" },
+    { url: adlCmrImg6, title: "اسکن  بارنامه" },
+  ];
   const zoom = useRef();
-  const navigationPrevRef = useRef(null);
-  const navigationNextRef = useRef(null);
 
   useEffect(() => {
     zoom.current.scrollIntoView(false);
   }, []);
+
 
   return (
     <div className="mainWrapper">
@@ -47,131 +57,29 @@ export default function AdlCmr(props) {
           <h4>پنل باربری شرکت حمل و نقل </h4>
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
-        <Swiper
-          style={{ maxWidth: "90%" }}
-          modules={[Pagination, Navigation]}
-          spaceBetween={10}
-          slidesPerView={"auto"}
-          centeredSlides={true}
-          // navigation
-          pagination={{
-            type: "progressbar",
-          }}
-          navigation={{
-            prevEl: navigationPrevRef.current,
-            nextEl: navigationNextRef.current,
-          }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide>
-            {" "}
-            <img src={adlCmrImg1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={adlCmrImg2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={adlCmrImg3} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={adlCmrImg4} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={adlCmrImg5} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={adlCmrImg6} />
-          </SwiperSlide>
-          <div ref={navigationPrevRef} />
-          <div ref={navigationNextRef} />
-        </Swiper>
-        {/* <div className="imgWrapper">
-          <img
-            src={adlCmrImg1}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 1 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlCmrImg2}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 2 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlCmrImg3}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 3 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlCmrImg4}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 4 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlCmrImg5}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 5 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlCmrImg6}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
-          />
-        </div> */}
-        {/* <div className="buttonWrapper" style={{ marginBottom: "60px" }}>
-          <button
-            className="b"
-            onClick={(e) =>
-              setState((prevState) => ({
-                ...prevState,
-                activeSlider:
-                  state.activeSlider !== 1 ? state.activeSlider - 1 : 6,
-              }))
-            }
-          >
-            {" "}
-            <lord-icon
-              src="https://cdn.lordicon.com/iiueiwdd.json"
-              trigger="hover"
-              colors="primary:#000,secondary:#000"
-              style={{ width: "30px", height: "30px" }}
-            ></lord-icon>{" "}
-          </button>
-          {buttons.map((id, index) => (
-            <button
-              key={index}
-              className={`circle ${
-                state.activeSlider === id ? "activeCircle" : ""
-              }`}
-              onClick={(e) =>
-                setState((prevState) => ({
-                  ...prevState,
-                  activeSlider: id,
-                }))
-              }
-            ></button>
-          ))}
-          <button
-            className="b"
-            onClick={(e) =>
-              setState((prevState) => ({
-                ...prevState,
-                activeSlider:
-                  state.activeSlider !== buttons.length
-                    ? state.activeSlider + 1
-                    : 1,
-              }))
-            }
-          >
-            {" "}
-            <lord-icon
-              src="https://cdn.lordicon.com/gkditgni.json"
-              trigger="hover"
-              colors="primary:#000,secondary:#000"
-              style={{ width: "30px", height: "30px" }}
-            ></lord-icon>{" "}
-          </button>
-        </div> */}
+        <div className="album" >
+        {images.map((img, index) => (
+                <img src={img.url} alt={img.title} key={index + "img"}
+                onClick={() => {
+                  setState((prevState)=> ({
+                    ...prevState,
+                    isOpen: true ,
+                    selectedImg: index
+                  }))
+                }}
+                />
+            ))}
+        </div>
+        {state.isOpen && (
+            <Lightbox
+              images={images}
+              allowRotate={false}
+              style={{height: '100vh'}}
+              onClose={() => setState({ isOpen: false })}
+              startIndex={state.selectedImg}
+              keyboardInteraction={true}
+            />
+          )}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}

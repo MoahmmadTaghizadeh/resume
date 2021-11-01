@@ -30,12 +30,12 @@ export default function Zoshk(props) {
   };
   const buttons = [1, 2, 3, 4, 5, 6];
   const images = [
-    { url: adlDriverImg1, title: "adlDriverImg1" },
-    { url: adlDriverImg2, title: "adlDriverImg1" },
-    { url: adlDriverImg3, title: "adlDriverImg1" },
-    { url: adlDriverImg4, title: "adlDriverImg1" },
-    { url: adlDriverImg5, title: "adlDriverImg1" },
-    { url: adlDriverImg6, title: "adlCustomerImg1" },
+    { url: adlDriverImg1, title: "صفحه ورود" },
+    { url: adlDriverImg2, title: "جزئیات سفارش" },
+    { url: adlDriverImg3, title: "ویرایش سفارش" },
+    { url: adlDriverImg4, title: "تحویل بار به راننده" },
+    { url: adlDriverImg5, title: "تقویم پروژه" },
+    { url: adlDriverImg6, title: "سطوح دسترسی" },
   ];
   const zoom = useRef();
 
@@ -77,92 +77,6 @@ export default function Zoshk(props) {
               keyboardInteraction={true}
             />
           )}
-        {/* <div className="imgWrapper">
-          <img
-            src={adlDriverImg1}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 1 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg2}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 2 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg3}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 3 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg4}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 4 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg5}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 5 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg6}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
-          />
-        </div>
-        <div className="buttonWrapper" style={{ marginBottom: "60px" }}>
-          <button
-            className="b"
-            onClick={(e) =>
-              setState((prevState) => ({
-                ...prevState,
-                activeSlider:
-                  state.activeSlider !== 1 ? state.activeSlider - 1 : 6,
-              }))
-            }
-          >
-            {" "}
-            <lord-icon
-              src="https://cdn.lordicon.com/iiueiwdd.json"
-              trigger="hover"
-              colors="primary:#000,secondary:#000"
-              style={{ width: "30px", height: "30px" }}
-            ></lord-icon>{" "}
-          </button>
-          {buttons.map((id, index) => (
-            <button
-            key={index}
-              className={`circle ${
-                state.activeSlider === id ? "activeCircle" : ""
-              }`}
-              onClick={(e) =>
-                setState((prevState) => ({
-                  ...prevState,
-                  activeSlider: id,
-                }))
-              }
-            ></button>
-          ))}
-          <button
-            className="b"
-            onClick={(e) =>
-              setState((prevState) => ({
-                ...prevState,
-                activeSlider:
-                  state.activeSlider !== buttons.length
-                    ? state.activeSlider + 1
-                    : 1,
-              }))
-            }
-          >
-            {" "}
-            <lord-icon
-              src="https://cdn.lordicon.com/gkditgni.json"
-              trigger="hover"
-              colors="primary:#000,secondary:#000"
-              style={{ width: "30px", height: "30px" }}
-            ></lord-icon>{" "}
-          </button>
-        </div> */}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}

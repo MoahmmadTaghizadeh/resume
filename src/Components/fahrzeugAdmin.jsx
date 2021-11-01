@@ -9,15 +9,27 @@ import adlDriverImg5 from "../static/fahrzeugAdmin5.png";
 import adlDriverImg6 from "../static/fahrzeugAdmin6.png";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
+import Lightbox from "react-awesome-lightbox";
+import "react-awesome-lightbox/build/style.css";
 
 export default function FahrzeugAdmin(props) {
   const history = useHistory();
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlDriverImg1,
+    selectedImg: 0, 
+    isOpen: false
   });
   const buttons = [1, 2, 3, 4, 5, 6];
   const zoom = useRef();
+  const images = [
+    { url: adlDriverImg1, title: "ثبت وضعیت " },
+    { url: adlDriverImg2, title: "ثبت منطقه "  },
+    { url: adlDriverImg3, title: "تنظیمات قیمت ها" },
+    { url: adlDriverImg4, title: "گزارش گیری" },
+    { url: adlDriverImg5, title: "اطلاعات کاربران" },
+    { url: adlDriverImg6, title: "مدال حذف کاربر" },
+  ];
 
   useEffect(() => {
     zoom.current.scrollIntoView(false);
@@ -33,92 +45,29 @@ export default function FahrzeugAdmin(props) {
           <h4>پنل ادمین </h4>
           <h5> Node.js - React.js - MySQL</h5>
         </header>
-        <div className="imgWrapper">
-          <img
-            src={adlDriverImg1}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 1 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg2}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 2 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg3}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 3 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg4}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 4 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg5}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 5 ? "opaque" : ""}`}
-          />
-          <img
-            src={adlDriverImg6}
-            alt="project pic"
-            className={`slide ${state.activeSlider == 6 ? "opaque" : ""}`}
-          />
+        <div className="album">
+            {images.map((img, index) => (
+                <img src={img.url} alt={img.title} key={index + "img"}
+                onClick={() => {
+                  setState((prevState)=> ({
+                    ...prevState,
+                    isOpen: true ,
+                    selectedImg: index
+                  }))
+                }}
+                />
+            ))}
         </div>
-        <div className="buttonWrapper" style={{ marginBottom: "60px" }}>
-          <button
-            className="b"
-            onClick={(e) =>
-              setState((prevState) => ({
-                ...prevState,
-                activeSlider:
-                  state.activeSlider !== 1 ? state.activeSlider - 1 : 6,
-              }))
-            }
-          >
-            {" "}
-            <lord-icon
-              src="https://cdn.lordicon.com/iiueiwdd.json"
-              trigger="hover"
-              colors="primary:#000,secondary:#000"
-              style={{ width: "30px", height: "30px" }}
-            ></lord-icon>{" "}
-          </button>
-          {buttons.map((id, index) => (
-            <button
-              key={index}
-              className={`circle ${
-                state.activeSlider === id ? "activeCircle" : ""
-              }`}
-              onClick={(e) =>
-                setState((prevState) => ({
-                  ...prevState,
-                  activeSlider: id,
-                }))
-              }
-            ></button>
-          ))}
-          <button
-            className="b"
-            onClick={(e) =>
-              setState((prevState) => ({
-                ...prevState,
-                activeSlider:
-                  state.activeSlider !== buttons.length
-                    ? state.activeSlider + 1
-                    : 1,
-              }))
-            }
-          >
-            {" "}
-            <lord-icon
-              src="https://cdn.lordicon.com/gkditgni.json"
-              trigger="hover"
-              colors="primary:#000,secondary:#000"
-              style={{ width: "30px", height: "30px" }}
-            ></lord-icon>{" "}
-          </button>
-        </div>
+        {state.isOpen && (
+            <Lightbox
+              images={images}
+              allowRotate={false}
+              style={{height: '100vh'}}
+              onClose={() => setState({ isOpen: false })}
+              startIndex={state.selectedImg}
+              keyboardInteraction={true}
+            />
+          )}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}
@@ -134,19 +83,19 @@ export default function FahrzeugAdmin(props) {
         <p className="description">
           این پنل برای ادمین های شرکت فارزویگ ایجاد شده است تا در محیط وب نواحی،
           مناطق، چک پوینت ها و... مورد استفاده در پنل کاربری را تعریف، ویرایش و
-          یا حذف کنند. و گزارش های کاملی از کار کارکنان شرکت دریافت کنند
+          یا حذف کنند. و گزارش های کاملی از کار کارکنان شرکت دریافت کنند.
         </p>
         <p className="description">
           در این پروژه من به عنوان فریلنسر توسعه و دیباگینگ کار را بر عهده داشتم
           و ناحیه های غیراساسی را نیز به این پنل اضافه کردم. از جمله ایرادات می
           توان به رفع validation در فرم های ثبت منطقه و ناحیه، ثبت ترکینگ برای
           مگا باتن اضافه شده در پنل کاربری، بهبود متن خطاها و ترکینگ ها و ایجاد
-          سطخ دسترسی برای انواع کارمندان(تعمیرکار، بازرس، پشتیبانی و ...) اشاره
-          کرد
+          سطح دسترسی برای انواع کارمندان(تعمیرکار، بازرس، پشتیبانی و ...) اشاره
+          کرد.
         </p>
         <p className="description">
           تمامی این بخش ها به صورت فول استک یعنی هم بخش React و هم بخش Node و
-          MySQL توسط من انجام شده است
+          MySQL توسط من انجام شده است.
         </p>
         <br />
         <hr />

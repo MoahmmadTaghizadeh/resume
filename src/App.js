@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, useLocation } from "react-route
 
 import "./App.css";
 import "./static/Styles/styles.css";
+import "./static/Styles/lightbox.css";
 import Homepage from "./Components/Homepage";
 import AdlDriver from "./Components/adlDriver";
 import AdlCustomer from "./Components/adlCustomer";
