@@ -564,10 +564,9 @@ li:hover {
   text-align: justify;
   display: flex;
   justify-content: flex-start;
-  /* text-align: right; */
+  width: 100%;
   margin-top: 25px;
   color: #888;
-  /* text-indent: 30px; */
 }
 
 .main span {
@@ -1266,14 +1265,14 @@ li:hover {
   max-height: 200px;
   border-radius: 0;
   margin: 4px auto;
-  box-shadow: 0px 2px 1px 1px rgb(230, 230, 230);
+  /* box-shadow: 0px 2px 1px 1px rgb(230, 230, 230); */
   cursor: pointer;
   transition: all 0.3s ease-out;
   z-index: 1000;
-  background-image: url("../c.svg");
-  background-size: cover;
+  background-image: url("../wood.jpg");
+  /* background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1289,9 +1288,9 @@ li:hover {
   box-shadow: 0px 1px 2px 3px rgb(230, 230, 230);
   border-radius: 3px;
   background-image: url("../wood.jpg");
-  background-position: center;
+  /* background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   display: flex;
   justify-content: center;
 }
