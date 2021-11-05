@@ -1,6 +1,11 @@
 import React from "react";
-import SlideRoutes from 'react-slide-routes';
-import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
+import SlideRoutes from "react-slide-routes";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useLocation,
+} from "react-router-dom";
 
 import "./App.css";
 import "./static/Styles/styles.css";
@@ -12,7 +17,6 @@ import AdlCmr from "./Components/adlCmr";
 import WebApplicationTaxi from "./Components/webApp";
 import Avid from "./Components/avid";
 
-
 import "swiper/swiper-bundle.css";
 import Fahrzeug from "./Components/fahrzeug";
 import FahrzeugAdmin from "./Components/fahrzeugAdmin";
@@ -20,7 +24,7 @@ import TaxiCountry from "./Components/TaxiCountry";
 import Englishhob from "./Components/englishhob";
 import Zoshk from "./Components/zoshk";
 import Taxi1830 from "./Components/taxi1830";
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
   // const location = useLocation();
@@ -39,9 +43,9 @@ function App() {
     { path: "/taxi1830", component: Taxi1830 },
   ];
   return (
-    <Router>
+    <Router basename="/resume">
       <Switch>
-      {/* <SlideRoutes > */}
+        {/* <SlideRoutes > */}
         {routes.map((route, index) => (
           <Route
             key={index}
