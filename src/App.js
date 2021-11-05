@@ -43,7 +43,7 @@ function App() {
     { path: "/taxi1830", component: Taxi1830 },
   ];
   return (
-    <Router basename="/resume">
+    <Router basename={window.location.pathname || ""}>
       <Switch>
         {/* <SlideRoutes > */}
         {routes.map((route, index) => (
