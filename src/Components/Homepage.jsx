@@ -43,15 +43,15 @@ export default function Homepage() {
 
   const navLinks = [
     {
-      link: "/#",
+      link: "/resume/#",
       title: "مهارت ها",
     },
     {
-      link: "/#resume",
+      link: "/resume/#resume",
       title: "نمونه کار ها",
     },
     {
-      link: "/#jobs",
+      link: "/resume/#jobs",
       title: "سابقه شغلی",
     },
   ];
@@ -80,10 +80,10 @@ export default function Homepage() {
   const mysqlRef = useRef(null);
   const mongoRef = useRef(null);
   const mssqlRef = useRef(null);
-  const ts = useRef(null); 
-  const html = useRef(null); 
-  const css = useRef(null); 
-  const csharp = useRef(null); 
+  const ts = useRef(null);
+  const html = useRef(null);
+  const css = useRef(null);
+  const csharp = useRef(null);
   return (
     <>
       <div className="homePage">
@@ -127,8 +127,10 @@ export default function Homepage() {
                 <ul>
                   {navLinks.map((item, index) => (
                     <li className="different" key={index * 13}>
-                      <a href={item.link}  key={index}>
-                        <span className="aLink" key={index *12}>{item.title} </span>
+                      <a href={item.link} key={index}>
+                        <span className="aLink" key={index * 12}>
+                          {item.title}{" "}
+                        </span>
                       </a>
                     </li>
                   ))}
