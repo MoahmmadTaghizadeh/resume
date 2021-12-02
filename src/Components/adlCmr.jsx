@@ -32,7 +32,7 @@ export default function AdlCmr(props) {
   });
   const buttons = [1, 2, 3, 4, 5, 6];
   const images = [
-    { url: adlCmrImg1, title: "سالن اعلام بار" },
+    { url: adlCmrImg1, title: "سالن اعلام " },
     { url: adlCmrImg2, title: "پذیرش بار"  },
     { url: adlCmrImg3, title:  "صدور حواله" },
     { url: adlCmrImg4, title: "اسکن حواله" },
